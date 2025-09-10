@@ -41,3 +41,10 @@ console.log(weight);
 //const bmi = weight / Math.pow(+height,2);
 const bmi = Number((weight / (+height) ** 2).toFixed(1));
 console.log(bmi);
+
+//8
+const incomingValue = 5;
+const resultat =  incomingValue + Number('22');
+const defaultValue = 10;
+const valuee = resultat || defaultValue
+console.log(valuee)
