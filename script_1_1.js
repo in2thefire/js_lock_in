@@ -47,4 +47,5 @@ const incomingValue = 5;
 const resultat =  incomingValue + Number('22');
 const defaultValue = 10;
 const valuee = resultat || defaultValue
-console.log(valuee)
+console.log(valuee);
+
