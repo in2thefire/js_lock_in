@@ -48,4 +48,3 @@ const resultat =  incomingValue + Number('22');
 const defaultValue = 10;
 const valuee = resultat || defaultValue
 console.log(valuee);
-
