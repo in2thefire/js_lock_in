@@ -27,8 +27,17 @@ const name = 'Bohdan';
 const age = 24;
 console.log(`Hi, my name is ${name} and my age is ${age}`)
 
-//6 
+//6  
 const c = 24;
 const d = '5';
 const result1 = c - Number(d);
 console.log(typeof result1, result1);
+
+//7 
+let weight = '70,6';
+let height = '1.80';
+weight = Number(weight.replace(',','.'));
+console.log(weight);
+//const bmi = weight / Math.pow(+height,2);
+const bmi = Number((weight / (+height) ** 2).toFixed(1));
+console.log(bmi);
