@@ -15,3 +15,7 @@ console.log(students);
 //3
 const result = 108 + 24 * 3 - 4;
 console.log(result);
+
+//4
+const value = 27.5;
+console.log(Math.ceil(value));
