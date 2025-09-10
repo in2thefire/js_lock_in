@@ -18,6 +18,17 @@ console.log(result);
 
 //4
 const value = 27.5;
-//console.log(Math.ceil(value));
-//console.log(Math.floor(value));
-console.log(Math.round(value));
+//console.log(Math.ceil(value)); завжди округлить в більшу сторону
+//console.log(Math.floor(value)); завжди округлить в меншу сторону 
+console.log(Math.round(value)); // завжди округлить просто, якщо >5 то в низ якщо <= 5 то в верх
+
+//5
+const name = 'Bohdan';
+const age = 24;
+console.log(`Hi, my name is ${name} and my age is ${age}`)
+
+//6 
+const c = 24;
+const d = '5';
+const result1 = c - Number(d);
+console.log(typeof result1, result1);
