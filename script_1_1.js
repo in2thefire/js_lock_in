@@ -19,4 +19,5 @@ console.log(result);
 //4
 const value = 27.5;
 //console.log(Math.ceil(value));
-console.log(Math.floor(value));
+//console.log(Math.floor(value));
+console.log(Math.round(value));
