@@ -13,3 +13,5 @@ students += 50;
 console.log(students);
 
 //3
+const result = 108 + 24 * 3 - 4;
+console.log(result);
