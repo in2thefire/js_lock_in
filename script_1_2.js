@@ -16,3 +16,26 @@ if(a){
 }else{
     console.log('false');
 }
+
+//3                  true     false
+const  b = 10 > 6 ? 'more' : 'less';
+console.log(b);
+
+//4
+const price = 5;
+switch(price){
+    case 1:
+        console.log('case 1');
+        break
+    case 2:
+        console.log('case 2');
+        break
+    case 3:
+        console.log('case 3');
+        break
+    case 5:
+        console.log('case 5');
+        break
+    default:
+        console.log('default');
+}
