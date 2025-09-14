@@ -99,12 +99,20 @@
 // console.log(`Time is ${timestring}`);
 
 //11
-let userInput = Number(prompt('Введіть число'));
-console.log(typeof userInput);
-if (!userInput){
-    console.log('Це 0');
-}else if (userInput > 0){
-    console.log(`${userInput} це позитивне число`);
+// const userInput = Number(prompt('Введіть число'));
+// console.log(typeof userInput);
+// if (!userInput){
+//     console.log('Це 0');
+// }else if (userInput > 0){
+//     console.log(`${userInput} це позитивне число`);
+// }else{
+//     console.log(`${userInput} це від'ємне число`);
+// }
+
+//12
+const userInput = Number(prompt('Введіть число'));
+if(userInput % 2){
+    console.log('Не парне');
 }else{
-    console.log(`${userInput} це від'ємне число`);
+    console.log('Парне');
 }
