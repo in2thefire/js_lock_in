@@ -62,3 +62,15 @@ while(i < str.length){
     i += 1;
     
 }
+
+//8
+const str1 = 'Hi man'
+let n = 0;
+do{ 
+    if(str1[i] === 'W'){
+    console.log('yes');
+    break
+    }
+    console.log('no', str1[i]); 
+    i += 1;
+}while(i < str1.length);
