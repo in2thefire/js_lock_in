@@ -41,6 +41,13 @@ switch(price){
 }
 
 //5 ініціалізація; умова; поствираз
-for (let i = 0; i < 10; i += 1){
+for (let i = 0; i < 5; i += 1){
     console.log(i);
+}
+
+//6
+
+const str = 'Hello World';
+for (let i = 0; i < str.length; i += 1){
+    console.log(str[i]);
 }
