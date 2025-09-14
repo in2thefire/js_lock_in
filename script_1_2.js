@@ -46,8 +46,19 @@ for (let i = 0; i < 5; i += 1){
 }
 
 //6
-
 const str = 'Hello World';
 for (let i = 0; i < str.length; i += 1){
     console.log(str[i]);
+}
+
+//7
+let i = 0;
+while(i < str.length){
+    if(str[i] === 'W'){
+        console.log('yes');
+        break
+    }
+    console.log('no', str[i]);
+    i += 1;
+    
 }
