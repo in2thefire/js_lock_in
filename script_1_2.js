@@ -39,3 +39,8 @@ switch(price){
     default:
         console.log('default');
 }
+
+//5 ініціалізація; умова; поствираз
+for (let i = 0; i < 10; i += 1){
+    console.log(i);
+}
