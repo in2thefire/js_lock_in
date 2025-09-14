@@ -110,9 +110,46 @@
 // }
 
 //12
-const userInput = Number(prompt('Введіть число'));
-if(userInput % 2){
-    console.log('Не парне');
+// const userInput = Number(prompt('Введіть число'));
+// if(userInput % 2){
+//     console.log('Не парне');
+// }else{
+//     console.log('Парне');
+// }
+
+//13
+// const a = 120; 
+// const b = 180;
+// if(a > 100 && b > 100){
+//     console.log(a > b ? a : b);
+// }else{ 
+//     console.log(b + 512);
+// }
+
+//14
+// let link = 'https:/my-site.com/about';
+// if(!(link.endsWith('/'))){
+//     link += '/'
+// }
+// console.log(link);
+
+//15
+// let link = 'https:/my-site.com/about';
+// if (!link.endsWith('/') && link.includes('my-site')){
+//         link += '/';
+// }
+// console.log(link);
+
+//16
+// let link = 'https:/my-site.com/about';
+// console.log(!link.endsWith('/') && link.includes('my-site') ? link += '/' : link);
+
+//17
+const hours = 12;
+if (hours < 17){
+    console.log('Pending..');
+}else if(hours >= 17 && hours <= 24){
+    console.log('Expires..');
 }else{
-    console.log('Парне');
+    console.log('Overdue..');
 }
