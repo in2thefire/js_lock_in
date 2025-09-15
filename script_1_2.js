@@ -155,32 +155,59 @@
 // }
 
 //18
-const daysUntilDeadline = 0;
-if (!daysUntilDeadline) {
-    console.log('Сьогодні');
-}else if (daysUntilDeadline === 1){
-    console.log('Завтра');
-}else if (daysUntilDeadline === 2){
-    console.log('Після завтра');
-}else {
-    console.log(`Залишилось ${daysUntilDeadline} days`);
-}
+// const daysUntilDeadline = 0;
+// if (!daysUntilDeadline) {
+//     console.log('Сьогодні');
+// }else if (daysUntilDeadline === 1){
+//     console.log('Завтра');
+// }else if (daysUntilDeadline === 2){
+//     console.log('Після завтра');
+// }else {
+//     console.log(`Залишилось ${daysUntilDeadline} days`);
+// }
 
 
-if(daysUntilDeadline >= 0){
-    switch(daysUntilDeadline){
-    case 0 : 
-        console.log('Сьогодні');
-        break
-    case 1:
-        console.log('Завтра');
-        break
-    case 2:
-        console.log('Після завтра');
-        break
-    default:
-        console.log(`Залишилось ${daysUntilDeadline} days`);
+// if(daysUntilDeadline >= 0){
+//     switch(daysUntilDeadline){
+//     case 0 : 
+//         console.log('Сьогодні');
+//         break
+//     case 1:
+//         console.log('Завтра');
+//         break
+//     case 2:
+//         console.log('Після завтра');
+//         break
+//     default:
+//         console.log(`Залишилось ${daysUntilDeadline} days`);
+//     }
+// }else {
+//     console.log('Неправильне число');
+// }
+
+//19
+// const max = 200;
+// const min = 10;
+
+// for(let i = min; i <= max; i += 1){
+//     if(!(i % 5)){
+//         console.log(i);
+//     } 
+// }
+
+//20
+
+const login = prompt('Login?');
+if(!login){
+    console.log('Cкасовано');
+}else if(login === "Адмін"){
+    const pass = prompt('Pass?');
+    if(pass === "Я адмін"){
+        console.log('Я вас знаю');
+    }else{ 
+        console.log("Невірний пароль");
     }
-}else {
-    console.log('Неправильне число');
+    
+}else{
+    console.log('Я вас не знаю');
 }
