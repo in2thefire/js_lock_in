@@ -196,18 +196,17 @@
 // }
 
 //20
-
-const login = prompt('Login?');
-if(!login){
-    console.log('Cкасовано');
-}else if(login === "Адмін"){
-    const pass = prompt('Pass?');
-    if(pass === "Я адмін"){
-        console.log('Я вас знаю');
-    }else{ 
-        console.log("Невірний пароль");
-    }
+// const login = prompt('Login?');
+// if(!login){
+//     console.log('Cкасовано');
+// }else if(login === "Адмін"){
+//     const pass = prompt('Pass?');
+//     if(pass === "Я адмін"){
+//         console.log('Я вас знаю');
+//     }else{ 
+//         console.log("Невірний пароль");
+//     }
     
-}else{
-    console.log('Я вас не знаю');
-}
+// }else{
+//     console.log('Я вас не знаю');
+// }
