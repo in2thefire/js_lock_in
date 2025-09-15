@@ -145,11 +145,42 @@
 // console.log(!link.endsWith('/') && link.includes('my-site') ? link += '/' : link);
 
 //17
-const hours = 12;
-if (hours < 17){
-    console.log('Pending..');
-}else if(hours >= 17 && hours <= 24){
-    console.log('Expires..');
-}else{
-    console.log('Overdue..');
+// const hours = 12;
+// if (hours < 17){
+//     console.log('Pending..');
+// }else if(hours >= 17 && hours <= 24){
+//     console.log('Expires..');
+// }else{
+//     console.log('Overdue..');
+// }
+
+//18
+const daysUntilDeadline = 0;
+if (!daysUntilDeadline) {
+    console.log('Сьогодні');
+}else if (daysUntilDeadline === 1){
+    console.log('Завтра');
+}else if (daysUntilDeadline === 2){
+    console.log('Після завтра');
+}else {
+    console.log(`Залишилось ${daysUntilDeadline} days`);
+}
+
+
+if(daysUntilDeadline >= 0){
+    switch(daysUntilDeadline){
+    case 0 : 
+        console.log('Сьогодні');
+        break
+    case 1:
+        console.log('Завтра');
+        break
+    case 2:
+        console.log('Після завтра');
+        break
+    default:
+        console.log(`Залишилось ${daysUntilDeadline} days`);
+    }
+}else {
+    console.log('Неправильне число');
 }
