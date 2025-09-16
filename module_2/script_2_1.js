@@ -7,14 +7,29 @@ console.log(array);
 // const second = array[1];
 // const last = array[array.length - 1];
 // console.log(first, second, last);
-// console.log(array.length);
+// console.log(array.length);   
 
-for(let i = 0; i < array.length; i += 1){
-    if(Array.isArray(array[i])){
-        for(let j = 0; j < array[i].length; j += 1){
-            console.log(array[i][j]);
-        }
-        continue
+//2
+// for(let i = 0; i < array.length; i += 1){
+//     if(Array.isArray(array[i])){
+//         for(let j = 0; j < array[i].length; j += 1){
+//             console.log(array[i][j]);
+//         }
+//         continue
+//     }
+//     console.log(array[i]);
+// }
+
+//3
+// for(const item of array){
+//     console.log(item);
+// }
+
+//4
+for(let i = 0; i < array.length; i+=1){
+    if(typeof array[i] === 'string'){
+        array[i] = 'Змінили'
     }
     console.log(array[i]);
 }
+console.log(array);
