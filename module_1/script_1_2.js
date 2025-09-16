@@ -17,11 +17,11 @@
 //     console.log('false');
 // }
 
-//3                  true     false
+// 3                  true     false
 // const  b = 10 > 6 ? 'more' : 'less';
 // console.log(b);
 
-//4
+// 4
 // const price = 5;
 // switch(price){
 //     case 1:
@@ -40,18 +40,18 @@
 //         console.log('default');
 // }
 
-//5 ініціалізація; умова; поствираз
+// 5 ініціалізація; умова; поствираз
 // for (let i = 0; i < 5; i += 1){
 //     console.log(i);
 // }
 
-//6
+// 6
 // const str = 'Hello World';
 // for (let i = 0; i < str.length; i += 1){
 //     console.log(str[i]);
 // }
 
-//7
+// 7
 // let i = 0;
 // while(i < str.length){
 //     if(str[i] === 'W'){
@@ -98,7 +98,7 @@
 // }
 // console.log(`Time is ${timestring}`);
 
-//11
+// 11
 // const userInput = Number(prompt('Введіть число'));
 // console.log(typeof userInput);
 // if (!userInput){
@@ -109,7 +109,7 @@
 //     console.log(`${userInput} це від'ємне число`);
 // }
 
-//12
+// 12
 // const userInput = Number(prompt('Введіть число'));
 // if(userInput % 2){
 //     console.log('Не парне');
@@ -117,7 +117,7 @@
 //     console.log('Парне');
 // }
 
-//13
+// 13
 // const a = 120; 
 // const b = 180;
 // if(a > 100 && b > 100){
@@ -126,25 +126,25 @@
 //     console.log(b + 512);
 // }
 
-//14
+// 14
 // let link = 'https:/my-site.com/about';
 // if(!(link.endsWith('/'))){
 //     link += '/'
 // }
 // console.log(link);
 
-//15
+// 15
 // let link = 'https:/my-site.com/about';
 // if (!link.endsWith('/') && link.includes('my-site')){
 //         link += '/';
 // }
 // console.log(link);
 
-//16
+// 16
 // let link = 'https:/my-site.com/about';
 // console.log(!link.endsWith('/') && link.includes('my-site') ? link += '/' : link);
 
-//17
+// 17
 // const hours = 12;
 // if (hours < 17){
 //     console.log('Pending..');
@@ -154,7 +154,7 @@
 //     console.log('Overdue..');
 // }
 
-//18
+// 18
 // const daysUntilDeadline = 0;
 // if (!daysUntilDeadline) {
 //     console.log('Сьогодні');
@@ -185,7 +185,7 @@
 //     console.log('Неправильне число');
 // }
 
-//19
+// 19
 // const max = 200;
 // const min = 10;
 
@@ -195,7 +195,7 @@
 //     } 
 // }
 
-//20
+// 20
 // const login = prompt('Login?');
 // if(!login){
 //     console.log('Cкасовано');
