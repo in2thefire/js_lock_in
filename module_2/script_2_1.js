@@ -147,3 +147,12 @@
 //     const number = i + 1;
 //     console.log(`${number} : ${fruits[i]}`); 
 // }    
+
+//14
+const names = 'Jacob,Artem,Bohdan,Lidia';
+const phones = '0957629259,0978932312,0969764329,0951127630';
+const namesArr = names.split(',');
+const phonesArr = phones.split(',');
+for(let i = 0; i < namesArr.length, i < phonesArr.length; i += 1){
+        console.log(`${namesArr[i]} - ${phonesArr[i]}`);
+}
