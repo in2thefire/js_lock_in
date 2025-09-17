@@ -118,7 +118,7 @@
 
 //11
 // const genres = ['Jazz', 'Blues'];
-// genres.splice(genres.length,0,'RockNRoll');
+// genres.splice(genres.length,0,'RockNRoll');  
 // console.log(genres.splice(0,1,'Country, Reggae'));
 
 // genres.push('Rock n Roll');
@@ -126,11 +126,20 @@
 // console.log('last', genres[genres.length - 1]);
 // console.log(genres.shift()); 
 // genres.unshift('Country', 'Reggae');
-console.log(genres);
+// console.log(genres);
 
 //12
-const value = "10 15";
-const arr = value.split(" ");
-const square = arr[0] * arr[1]
-console.log(arr);
-console.log(square);
+// const value = "10 15";
+// const arr = value.split(" ");
+// const a = Number(arr[0]);
+// const b = Number(arr[arr.length - 1]);
+// const square = a * b;
+// console.log(arr);
+// console.log(square);
+
+//13
+const fruits = ['apple', 'banana', 'pear', 'peach', 'melon', 'orange', 'grapes'];
+for(let i = 0; i < fruits.length; i += 1){
+    const number = i + 1;
+    console.log(`${number} : ${fruits[i]}`); 
+}    
