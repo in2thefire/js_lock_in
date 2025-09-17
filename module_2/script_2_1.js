@@ -71,11 +71,66 @@
 // console.log(arr);
 
 //9
-const str = 'Hello i love JS';
-arr = str.split(" ");
+// const str = 'Hello i love JS';
+// arr = str.split(" ");
+// console.log(arr);
+// if(arr.includes('JS')){
+//     console.log('yes');
+// }else{
+//     console.log('no');
+// }
+// console.log(arr.includes('JS'));
+
+//10 PUSH - add from end , POP - delete from end, 
+// SHIFT - delete from begini   ng , UNSHIFT - add from begining,
+//splice - add, delete,change.
+
+// const arr = ['hello', 'world','js'];
+
+//push pop
+// arr.push(1,44,14,12);
+// arr.pop();
+// arr.pop();
+// arr.pop();
+
+//shift unshift
+// arr.unshift(3,2,1);
+// arr.shift();
+// arr.shift(); 
+
+//slice
+// const result = arr.slice(1,3);
+// console.log(result);
+
+//splice
+// arr.splice(1,0,'from', 'react', 'node');
+// const idx = arr.indexOf('world');
+// const result = arr.splice(idx, 1, 'from');
+// console.log('result', result);
+// console.log(arr);
+
+//concat
+// const arr = ['hello', 'world','js'];
+// const arr1 = [1,2,4];
+// const arr2 = [3,'hi'];
+// const result = arr.concat(arr1,arr2);
+// console.log(result);
+
+//11
+// const genres = ['Jazz', 'Blues'];
+// genres.splice(genres.length,0,'RockNRoll');
+// console.log(genres.splice(0,1,'Country, Reggae'));
+
+// genres.push('Rock n Roll');
+// console.log('first',genres[0]);
+// console.log('last', genres[genres.length - 1]);
+// console.log(genres.shift()); 
+// genres.unshift('Country', 'Reggae');
+console.log(genres);
+
+//12
+const value = "10 15";
+const arr = value.split(" ");
+const square = arr[0] * arr[1]
 console.log(arr);
-if(arr.includes('JS')){
-    console.log('yes');
-}else{
-    console.log('no');
-}
+console.log(square);
