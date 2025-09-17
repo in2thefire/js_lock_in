@@ -160,11 +160,22 @@
 //15
 // const string = 'Welcome to the future';
 // const arr = string.split(" ").slice(1, -1).join(' ');
-const arr = string.split(' ');
-arr.pop();
-arr.shift();
-const result = arr.join(" ");
-console.log(result);
+// const arr = string.split(' ');
+// arr.pop();
+// arr.shift();
+// const result = arr.join(" ");
+// console.log(result);
+
+//16
+// const arr = [13,44,55,3,7,5,10,11];
+// let min = arr[0];
+// for(numm of arr){
+//     if(numm < min){
+//         min = numm
+//     }
+// } 
+// console.log(min);
+
 //17
 // function getEvenNumbers(start, end) {
 //   let arr = [start, end];
