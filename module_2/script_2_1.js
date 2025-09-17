@@ -158,10 +158,44 @@
 // }
 
 //15
-const string = 'Welcome to the future';
+// const string = 'Welcome to the future';
 // const arr = string.split(" ").slice(1, -1).join(' ');
 const arr = string.split(' ');
 arr.pop();
 arr.shift();
 const result = arr.join(" ");
 console.log(result);
+//17
+// function getEvenNumbers(start, end) {
+//   let arr = [start, end];
+//   let result = [];
+//   for(i = start; i <= end; i += 1){
+//     if(i % 2 === 0){
+//       result.push(i)
+//     }
+//   }
+//   return result
+//   }
+// console.log(getEvenNumbers(1,3
+
+// ));
+
+// //18
+// function includes(array, value) {
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] === value) {
+//       return true;
+//     }
+//   }
+//   return false;
+// }
+
+// console.log(includes([1,2,3,4,5,6], ));
+
+// includes(['Hi','I','AM'],'Hi');
+
+
+
+
+const arr1 = [1,2,3,4,8,0];
+console.log(arr1.length);
