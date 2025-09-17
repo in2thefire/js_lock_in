@@ -65,7 +65,17 @@
 // console.log(array === copy);
 
 //8
-const str = 'hello world';
-const arr = str.split(" ").reverse().join(" ");
-console.log(str);
+// const str = 'hello world';
+// const arr = str.split(" ").reverse().join(" ");
+// console.log(str);
+// console.log(arr);
+
+//9
+const str = 'Hello i love JS';
+arr = str.split(" ");
 console.log(arr);
+if(arr.includes('JS')){
+    console.log('yes');
+}else{
+    console.log('no');
+}
