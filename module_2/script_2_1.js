@@ -50,11 +50,16 @@
 // console.log(test);
 
 //7
-const array = [1,2,3,4,5];
-const copy = array;
+// const array = [1,2,3,4,5];
+// const copy = array;
 
-array.push(6,7);
-copy.push(8,9);
+// array.push(6,7);
+// copy.push(8,9);
 
-console.log(array);
-console.log(copy);
+// console.log(array);
+// console.log(copy);
+
+// console.log(1 === 1);
+// console.log('hi' === 'hi');
+// console.log([1,2,3] === [1,2,3]);
+// console.log(array === copy);
