@@ -138,8 +138,12 @@
 // console.log(square);
 
 //13
-const fruits = ['apple', 'banana', 'pear', 'peach', 'melon', 'orange', 'grapes'];
-for(let i = 0; i < fruits.length; i += 1){
-    const number = i + 1;
-    console.log(`${number} : ${fruits[i]}`); 
-}    
+// const fruits = ['apple', 'banana', 'pear', 'peach', 'melon', 'orange', 'grapes'];
+// for(let i = 0, n = 1; i < fruits.length; i += 1, n += 1){
+//     console.log(`${n} : ${fruits[i]}`); 
+// }    
+
+// for(let i = 0; i < fruits.length; i += 1){
+//     const number = i + 1;
+//     console.log(`${number} : ${fruits[i]}`); 
+// }    
