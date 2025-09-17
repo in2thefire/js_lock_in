@@ -63,3 +63,9 @@
 // console.log('hi' === 'hi');
 // console.log([1,2,3] === [1,2,3]);
 // console.log(array === copy);
+
+//8
+const str = 'hello world';
+const arr = str.split(" ").reverse().join(" ");
+console.log(str);
+console.log(arr);
