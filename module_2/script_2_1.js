@@ -191,9 +191,9 @@
 
 // ));
 
-// //18
+//18
 // function includes(array, value) {
-//   for (let i = 0; i < array.length; i++) {
+//   for (let i = 0; i < array.length; i = i + 1) {
 //     if (array[i] === value) {
 //       return true;
 //     }
@@ -208,5 +208,4 @@
 
 
 
-const arr1 = [1,2,3,4,8,0];
-console.log(arr1.length);
+// const arr1 = [1,2,3,4,8,0];
