@@ -22,17 +22,26 @@
 // ass([1,2,3,4,5]);
 
 //3
-function sum(){
+// function sum(){
     // const arr = Array.from(arguments);
-    const arr = [...arguments];
-    let add = 0;
-    console.log(arr);
+    // const arr = [...arguments];
+    // let add = 0;
+    // console.log(arr);
     // for(let i = 0;i < arguments.length;i +=1){
     //     add = add + arguments[i];
     // }
-    for(const arg of arr){
-        add += arg;
+//     for(const arg of arr){
+//         add += arg;
+//     }
+//     console.log(add);
+// }
+// sum(1,2,3,45,6,78,9,0);
+
+//4
+function logItems(items){
+    for(let i = 0,n = 1; i < items.length; i += 1, n += 1){
+        console.log(`${n} : ${items[i]}`);
     }
-    console.log(add);
 }
-sum(1,2,3,45,6,78,9,0);
+logItems(['Mango','Poly','Sofa','Bookshelf']);
+logItems(['Apple','Banan','Pear','Orange','Lemon']);
