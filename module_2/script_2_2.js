@@ -56,8 +56,25 @@
 // }
 // printContactsInfo('Jacob,Wiliam,Bohdan,Lidia','03020122,20484721,132141,23115531');
 
-//6
-
-
-largestNumb([1,2,3,4],51,123,1234,24,16);
-largestNumb(54,11,24,66);
+//6 recursion function
+function largestNumb(){
+    let max;
+    for (const num of arguments){
+        if(typeof num === 'number'){
+            max = num;
+            break
+        }
+    }
+    for(const num of arguments){
+        if(typeof num === 'number'){
+            if(num > max){
+            max = num;
+            }
+        }else{
+            max = largestNumb(...num);
+        }
+    }   
+    return max
+}
+console.log(largestNumb([1,2,3,[4,2455]],51,123,1234,24,16));
+console.log(largestNumb(54,11,24,66));
