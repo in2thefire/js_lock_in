@@ -144,4 +144,13 @@ const courses = ['HTML','JS','CSS','React','SQL'];
 // console.log(removeCourse('JS'));
 // console.log(removeCourse('Node'));
 //courses.includes(elem) === !!~courses.indexof(elem)
-console.log(!!~-1);
+// console.log(!!~-1);
+function changeCourse(courseNew,courseOld){
+    const idx = courses.indexOf(courseOld)
+    if(!!~idx){
+    courses.splice(idx,1,courseNew);
+    return courses
+    }
+    return 'not found'
+}
+console.log(changeCourse('Node','React'));
