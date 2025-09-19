@@ -38,10 +38,26 @@
 // sum(1,2,3,45,6,78,9,0);
 
 //4
-function logItems(items){
-    for(let i = 0,n = 1; i < items.length; i += 1, n += 1){
-        console.log(`${n} : ${items[i]}`);
-    }
-}
-logItems(['Mango','Poly','Sofa','Bookshelf']);
-logItems(['Apple','Banan','Pear','Orange','Lemon']);
+// function logItems(items){
+//     for(let i = 0,n = 1; i < items.length; i += 1, n += 1){
+//         console.log(`${n} : ${items[i]}`);
+//     }
+// }
+// logItems(['Mango','Poly','Sofa','Bookshelf']);
+// logItems(['Apple','Banan','Pear','Orange','Lemon']);
+
+//5
+// function printContactsInfo(names, phones){
+//     names = names.split(",");
+//     phones = phones.split(",");
+//     for(let i = 0; i < names.length, i < names.length; i += 1){
+//         console.log(`${names[i]} - ${phones[i]}`);
+//     }
+// }
+// printContactsInfo('Jacob,Wiliam,Bohdan,Lidia','03020122,20484721,132141,23115531');
+
+//6
+
+
+largestNumb([1,2,3,4],51,123,1234,24,16);
+largestNumb(54,11,24,66);
