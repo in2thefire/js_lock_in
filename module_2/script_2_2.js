@@ -117,20 +117,30 @@ function addCourse(){
     }
     
 }
-function removeCourse(){
-    arr = [...arguments];
-    for(const elem of arr){
-        if(courses.includes(elem)){
-            const idx = courses.indexOf(elem);
-            courses.splice(idx, 1);
-            return courses
+// function removeCourse(){
+//     arr = [...arguments];
+//     for(const elem of arr){
+//         if(courses.includes(elem)){
+//             const idx = courses.indexOf(elem);
+//             courses.splice(idx, 1);
+//             return courses
             
-        }
-            return ("You don't have this course");
+//         }
+//             return ("You don't have this course");
         
+//     }
+// }
+function removeCourse(course){
+    const idx = courses.indexOf(course)
+    if(!!~idx){
+        courses.splice(idx, 1);
+        return
     }
-}
+    return "not found"
+
+} 
 console.log(addCourse('Express','Java','C#'));
 console.log(addCourse('Express'));
-console.log(removeCourse('JS','Node','React'));
+console.log(removeCourse('JS'));
 console.log(removeCourse('Node'));
+//courses.includes(elem) === !!~courses.indexof(elem)
