@@ -104,19 +104,19 @@
 // console.log(formatTime(70)); // "01:10"
 
 //9
-const courses = ['HTML','JS','CSS','React','SQL']
-function addCourse(){
-    arr = [...arguments];
-    for(const elem of arr){
-        if(courses.includes(elem)){
-            return 'You already have this course'
-        }else{
-            courses.push(elem);
-            return courses
-        }
-    }
+const courses = ['HTML','JS','CSS','React','SQL'];
+// function addCourse(){
+//     arr = [...arguments];
+//     for(const elem of arr){
+//         if(courses.includes(elem)){
+//             return 'You already have this course'
+//         }else{
+//             courses.push(elem);
+//             return courses
+//         }
+//     }
     
-}
+// }
 // function removeCourse(){
 //     arr = [...arguments];
 //     for(const elem of arr){
@@ -130,17 +130,18 @@ function addCourse(){
         
 //     }
 // }
-function removeCourse(course){
-    const idx = courses.indexOf(course)
-    if(!!~idx){
-        courses.splice(idx, 1);
-        return
-    }
-    return "not found"
+// function removeCourse(course){
+//     const idx = courses.indexOf(course)
+//     if(!!~idx){
+//         courses.splice(idx, 1);
+//         return
+//     }
+//     return "not found"
 
-} 
-console.log(addCourse('Express','Java','C#'));
-console.log(addCourse('Express'));
-console.log(removeCourse('JS'));
-console.log(removeCourse('Node'));
+// } 
+// console.log(addCourse('Express','Java','C#'));
+// console.log(addCourse('Express'));
+// console.log(removeCourse('JS'));
+// console.log(removeCourse('Node'));
 //courses.includes(elem) === !!~courses.indexof(elem)
+console.log(!!~-1);
