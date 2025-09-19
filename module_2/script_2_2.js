@@ -57,24 +57,48 @@
 // printContactsInfo('Jacob,Wiliam,Bohdan,Lidia','03020122,20484721,132141,23115531');
 
 //6 recursion function
-function largestNumb(){
-    let max;
-    for (const num of arguments){
-        if(typeof num === 'number'){
-            max = num;
-            break
-        }
-    }
-    for(const num of arguments){
-        if(typeof num === 'number'){
-            if(num > max){
-            max = num;
-            }
-        }else{
-            max = largestNumb(...num);
-        }
-    }   
-    return max
+// function largestNumb(){
+//     let max;
+//     for (const num of arguments){
+//         if(typeof num === 'number'){
+//             max = num;
+//             break
+//         }
+//     }
+//     for(const num of arguments){
+//         if(typeof num === 'number'){
+//             if(num > max){
+//             max = num;
+//             }
+//         }else{
+//             max = largestNumb(...num);
+//         }
+//     }   
+//     return max
+// }
+// console.log(largestNumb([1,2,3,[4,2455]],51,123,1234,24,16));
+// console.log(largestNumb(54,11,24,66));
+
+//7 
+// function calAverage(){
+//     let result = 0;
+    // for(let i = 0; i < arguments.length; i += 1){
+    //     result += arguments[i];
+    // }
+//     for(const num of arguments){
+//         result += num;
+//     }
+//      return result / arguments.length;
+   
+// }
+// console.log(calAverage(1,2,3,4)); 
+// console.log(calAverage(14,8,2));
+
+//8
+function formatTime(minutes){
+    const hours = Math.floor(minutes / 60); 
+    minutes = minutes % 60;
+    return `${hours.toString().padStart(2,'0')} : ${minutes.toString().padStart(2,'0')}`
+
 }
-console.log(largestNumb([1,2,3,[4,2455]],51,123,1234,24,16));
-console.log(largestNumb(54,11,24,66));
+console.log(formatTime(70)); // "01:10"
