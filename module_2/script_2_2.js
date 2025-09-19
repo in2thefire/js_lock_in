@@ -104,7 +104,7 @@
 // console.log(formatTime(70)); // "01:10"
 
 //9
-const courses = ['HTML','JS','CSS','React','SQL'];
+// const courses = ['HTML','JS','CSS','React','SQL'];
 // function addCourse(){
 //     arr = [...arguments];
 //     for(const elem of arr){
@@ -145,12 +145,12 @@ const courses = ['HTML','JS','CSS','React','SQL'];
 // console.log(removeCourse('Node'));
 //courses.includes(elem) === !!~courses.indexof(elem)
 // console.log(!!~-1);
-function changeCourse(courseNew,courseOld){
-    const idx = courses.indexOf(courseOld)
-    if(!!~idx){
-    courses.splice(idx,1,courseNew);
-    return courses
-    }
-    return 'not found'
-}
-console.log(changeCourse('Node','React'));
+// function changeCourse(courseNew,courseOld){
+//     const idx = courses.indexOf(courseOld)
+//     if(!!~idx){
+//     courses.splice(idx,1,courseNew);
+//     return courses
+//     }
+//     return 'not found'
+// }
+// console.log(changeCourse('Node','React'));
