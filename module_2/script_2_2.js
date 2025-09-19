@@ -95,10 +95,42 @@
 // console.log(calAverage(14,8,2));
 
 //8
-function formatTime(minutes){
-    const hours = Math.floor(minutes / 60); 
-    minutes = minutes % 60;
-    return `${hours.toString().padStart(2,'0')} : ${minutes.toString().padStart(2,'0')}`
+// function formatTime(minutes){
+//     const hours = Math.floor(minutes / 60); 
+//     minutes = minutes % 60;
+//     return `${hours.toString().padStart(2,'0')} : ${minutes.toString().padStart(2,'0')}`
 
+// }
+// console.log(formatTime(70)); // "01:10"
+
+//9
+const courses = ['HTML','JS','CSS','React','SQL']
+function addCourse(){
+    arr = [...arguments];
+    for(const elem of arr){
+        if(courses.includes(elem)){
+            return 'You already have this course'
+        }else{
+            courses.push(elem);
+            return courses
+        }
+    }
+    
 }
-console.log(formatTime(70)); // "01:10"
+function removeCourse(){
+    arr = [...arguments];
+    for(const elem of arr){
+        if(courses.includes(elem)){
+            const idx = courses.indexOf(elem);
+            courses.splice(idx, 1);
+            return courses
+            
+        }
+            return ("You don't have this course");
+        
+    }
+}
+console.log(addCourse('Express','Java','C#'));
+console.log(addCourse('Express'));
+console.log(removeCourse('JS','Node','React'));
+console.log(removeCourse('Node'));
