@@ -171,7 +171,7 @@ function sortByBubble(arr){
     }
     return arr
 }
-console.log(sortByBobble(arr));
+console.log(sortByBubble(arr));
    
 // }
 // console.log(sortByBobble());
