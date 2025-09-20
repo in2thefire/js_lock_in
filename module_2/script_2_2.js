@@ -156,22 +156,22 @@
 // console.log(changeCourse('Node','React'));
 
 //10
-
 const arr = ['python','js','c++','ruby','node','react'];
-function sortByBubble(arr){
-    for(let i = 0;i < arr.length;i += 1){
-        for(let j =0; j < arr.length; j +=1){
-            if(arr[j] > arr[j + 1]){
-                const item = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = item;
+// function sortByBubble(arr){
+//     for(let i = 0;i < arr.length;i += 1){
+//         for(let j =0; j < arr.length - 1; j +=1){
+//             if(arr[j] > arr[j + 1]){
+//                 const item = arr[j];
+//                 arr[j] = arr[j + 1];
+//                 arr[j + 1] = item;
                 
-            }
-        }
-    }
-    return arr
-}
-console.log(sortByBubble(arr));
-   
+//             }
+//         }
+//     }
+//     return arr
 // }
-// console.log(sortByBobble());
+// console.log(sortByBubble(arr));
+
+arr.sort((a,b) => a.localeCompare(b));
+console.log(arr);
+   
