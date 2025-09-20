@@ -156,7 +156,7 @@
 // console.log(changeCourse('Node','React'));
 
 //10
-const arr = ['python','js','c++','ruby','node','react'];
+// const arr = ['python','js','c++','ruby','node','react'];
 // function sortByBubble(arr){
 //     for(let i = 0;i < arr.length;i += 1){
 //         for(let j =0; j < arr.length - 1; j +=1){
@@ -172,6 +172,6 @@ const arr = ['python','js','c++','ruby','node','react'];
 // }
 // console.log(sortByBubble(arr));
 
-arr.sort((a,b) => a.localeCompare(b));
-console.log(arr);
+// arr.sort((a,b) => a.localeCompare(b));
+// console.log(arr);
    
