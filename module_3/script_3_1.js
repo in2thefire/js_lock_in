@@ -62,7 +62,34 @@ const user = {
         React_Native: false
     },
     sayHello(){
-        console.log(this);
-    }
+        console.log(`My name is ${this.name}`);
+    },
+    iKnow(){
+        const keys = Object.keys(this.languages);
+        const values = Object.values(this.languages);
+        const entries = Object.entries(this.languages);
+        console.log(keys);
+        console.log(values);
+        console.log(entries);
+        // for(key of keys){
+        //     if(this.languages[key]){
+        //         console.log(key);
+        //     }
+        // }
+    //     for(const key in this.languages){
+    //         if(this.languages[key]){
+    //             console.log(`I know ${key}`);
+    //     }
+    // }
 }
-user.sayHello();
+}
+
+// const user2 = Object.create(user);
+// user2.name = 'Artem';
+// user2.languages.node = 'true';
+// console.log(user);
+//      
+// user2.iKnow();
+user.iKnow();
+// user2.sayHello()
+// user.sayHello();
