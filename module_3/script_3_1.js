@@ -39,7 +39,13 @@ const user = {
     }
 }
 
-if(user.hasOwnProperty('age')){
+// if(user.hasOwnProperty('age')){
+//     console.log('yes');
+// }else{
+//     console.log('no');
+// }
+
+if('age' in user){
     console.log('yes');
 }else{
     console.log('no');
