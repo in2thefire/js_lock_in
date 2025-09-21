@@ -52,25 +52,25 @@
 // }
 
 //3
-const user = {
-    name:'Bohdan',
-    age: 24,
-    languages: {
-        html: false,
-        css: false,
-        js: true,
-        React_Native: false
-    },
-    sayHello(){
-        console.log(`My name is ${this.name}`);
-    },
-    iKnow(){
-        const keys = Object.keys(this.languages);
-        const values = Object.values(this.languages);
-        const entries = Object.entries(this.languages);
-        console.log(keys);
-        console.log(values);
-        console.log(entries);
+// const user = {
+//     name:'Bohdan',
+//     age: 24,
+//     languages: {
+//         html: false,
+//         css: false,
+//         js: true,
+//         React_Native: false
+//     },
+//     sayHello(){
+//         console.log(`My name is ${this.name}`);
+//     },
+//     iKnow(){
+//         const keys = Object.keys(this.languages);
+//         const values = Object.values(this.languages);
+//         const entries = Object.entries(this.languages);
+//         console.log(keys);
+//         console.log(values);
+//         console.log(entries);
         // for(key of keys){
         //     if(this.languages[key]){
         //         console.log(key);
@@ -81,8 +81,8 @@ const user = {
     //             console.log(`I know ${key}`);
     //     }
     // }
-}
-}
+// }
+// }
 
 // const user2 = Object.create(user);
 // user2.name = 'Artem';
@@ -90,6 +90,25 @@ const user = {
 // console.log(user);
 //      
 // user2.iKnow();
-user.iKnow();
+// user.iKnow();
 // user2.sayHello()
 // user.sayHello();
+
+//4
+const user = {
+    name: 'Mango',
+    age: 20,
+    hobby: 'html',
+    premium: true,
+};
+
+user.mood = 'happy';
+user.hobby = 'skydiving';
+user['premium'] = 'false';
+
+const keys = Object.keys(user);
+for(const key of keys){
+    console.log(`${key} : ${user[key]}`);
+}
+
+console.log(user);  
