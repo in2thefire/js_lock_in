@@ -28,6 +28,30 @@
 // console.log(user);
 
 //2 
+// const user = {
+//     name:'Bohdan',
+//     age: 24,
+//     languages: {
+//         html: false,
+//         css: false,
+//         js: true,
+//         React_Native: false
+//     }
+// }
+
+// if(user.hasOwnProperty('age')){
+//     console.log('yes');
+// }else{
+//     console.log('no');
+// }
+
+// if('age' in user){
+//     console.log('yes');
+// }else{
+//     console.log('no');
+// }
+
+//3
 const user = {
     name:'Bohdan',
     age: 24,
@@ -36,17 +60,9 @@ const user = {
         css: false,
         js: true,
         React_Native: false
+    },
+    sayHello(){
+        console.log(this);
     }
 }
-
-// if(user.hasOwnProperty('age')){
-//     console.log('yes');
-// }else{
-//     console.log('no');
-// }
-
-if('age' in user){
-    console.log('yes');
-}else{
-    console.log('no');
-}
+user.sayHello();
