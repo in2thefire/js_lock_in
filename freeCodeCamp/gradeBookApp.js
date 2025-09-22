@@ -23,4 +23,13 @@ function getGrade(score) {
   }
 
 }
+function hasPassingGrade(score) {
+  let grade = getGrade(score)
+  if(grade !== 'F'){
+    return true
+  }else {
+    return false
+  }
+}
+
 
