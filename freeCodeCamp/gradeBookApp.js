@@ -34,11 +34,11 @@ function hasPassingGrade(score) {
 function studentMsg(totalScores, studentScore) {
   let total = getAverage(totalScores);
   let score = getGrade(studentScore);
-  if(score !== 'F'){
+  if(hasPassingGrade(studentScore)){
     return "Class average: " + total +". Your grade: " + score + ". You passed the course."
   }else{
     return "Class average: " + total +". Your grade: " + score + ". You failed the course."
   }
 }
-console.log(studentMsg([92, 88, 12, 77, 57, 100, 67, 38, 97, 89], 37));
+console.log(studentMsg([92, 88, 12, 77, 57, 100, 67, 38, 97, 89], 87));
 
