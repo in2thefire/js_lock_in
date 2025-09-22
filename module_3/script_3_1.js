@@ -95,20 +95,20 @@
 // user.sayHello();
 
 //4
-const user = {
-    name: 'Mango',
-    age: 20,
-    hobby: 'html',
-    premium: true,
-};
+// const user = {
+//     name: 'Mango',
+//     age: 20,
+//     hobby: 'html',
+//     premium: true,
+// };
 
-user.mood = 'happy';
-user.hobby = 'skydiving';
-user['premium'] = 'false';
+// user.mood = 'happy';
+// user.hobby = 'skydiving';
+// user['premium'] = 'false';
 
-const keys = Object.keys(user);
-for(const key of keys){
-    console.log(`${key} : ${user[key]}`);
-}
+// const keys = Object.keys(user);
+// for(const key of keys){
+//     console.log(`${key} : ${user[key]}`);
+// }
 
-console.log(user);  
+// console.log(user);  
