@@ -212,7 +212,7 @@ const account = {
             if(item.type === type){
                 sum += item.amount
             }
-        }
+        }   
         return sum
     }
 }
