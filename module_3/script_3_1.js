@@ -112,3 +112,52 @@
 // }
 
 // console.log(user);  
+
+//5 
+// const salary = {
+//     John: 100,
+//     Ann: 160,
+//     Pete: 130
+// };
+// let money = 0;
+// for(const key in salary){
+//     money += salary[key]
+// }
+
+// const values = Object.values(salary);
+// for(const value of values){
+//     money += value  
+// }
+// console.log(money);
+
+//6 
+function calcTotalPrice(stones,stoneName){
+     for(const stone of stones){
+        if(stone.name === stoneName){
+            return stone.price * stone.quantity;
+        }
+    }
+  return "Empty"      
+}
+const stone = [{
+    name:"Смарагд",
+    price: 1300,
+    quantity: 4
+},
+{
+    name:"Сапфір",
+    price: 2400,
+    quantity: 2
+},
+{
+    name:"Рубін",
+    price: 1700,
+    quantity: 3
+},
+{
+    name:"Топаз",
+    price: 2783,
+    quantity: 4
+}]
+
+console.log(calcTotalPrice(stone, "Сапфір"));
