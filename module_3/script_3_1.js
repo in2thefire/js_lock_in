@@ -131,33 +131,60 @@
 // console.log(money);
 
 //6 
-function calcTotalPrice(stones,stoneName){
-     for(const stone of stones){
-        if(stone.name === stoneName){
-            return stone.price * stone.quantity;
-        }
-    }
-  return "Empty"      
-}
-const stone = [{
-    name:"Смарагд",
-    price: 1300,
-    quantity: 4
-},
-{
-    name:"Сапфір",
-    price: 2400,
-    quantity: 2
-},
-{
-    name:"Рубін",
-    price: 1700,
-    quantity: 3
-},
-{
-    name:"Топаз",
-    price: 2783,
-    quantity: 4
-}]
+// function calcTotalPrice(stones,stoneName){
+//      for(const stone of stones){
+//         if(stone.name === stoneName){
+//             return stone.price * stone.quantity;
+//         }
+//     }
+//   return "Empty"      
+// }
+// const stone = [{
+//     name:"Смарагд",
+//     price: 1300,
+//     quantity: 4
+// },
+// {
+//     name:"Сапфір",
+//     price: 2400,
+//     quantity: 2
+// },
+// {
+//     name:"Рубін",
+//     price: 1700,
+//     quantity: 3
+// },
+// {
+//     name:"Топаз",
+//     price: 2783,
+//     quantity: 4
+// }]
 
-console.log(calcTotalPrice(stone, "Сапфір"));
+// console.log(calcTotalPrice(stone, "Сапфір"));
+
+//7
+const Transaction = {
+    DEPOSIT: 'deposit',
+    WITHDRAW: 'withdraw',
+};
+Object.freeze(Transaction);
+
+const account = {
+    balance: 0,
+    transaction: [],
+    createTransaction(amount, type){
+        return {
+            id: Date.now(),
+            amount,
+            type
+        }
+    },
+    deposit(amount){
+        if(amount <= 0){
+            return "Error"
+        }
+        const item = this.createTransaction(amount, Transaction.DEPOSIT);
+
+    },
+}
+account.deposit(1000);
