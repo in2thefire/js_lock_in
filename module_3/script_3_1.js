@@ -171,7 +171,7 @@ Object.freeze(Transaction);
 
 const account = {
     balance: 0,
-    transaction: [],
+    transaction: [{id: 1758648235203, amount: 12678, type: 'deposit'}],
     createTransaction(amount, type){
         return {
             id: Date.now(),
@@ -184,7 +184,43 @@ const account = {
             return "Error"
         }
         const item = this.createTransaction(amount, Transaction.DEPOSIT);
-
+        this.balance += amount;
+        this.transaction.push(item);
     },
+    withdraw(amount){
+         if(amount > this.balance || amount <= 0){
+            return "You don't have money for this"
+         }
+         const item = this.createTransaction(amount, Transaction.WITHDRAW);
+         this.balance -= amount;
+         this.transaction.push(item);
+    },
+    getBalance(){
+        return this.balance;
+    },
+    getTransactionDetails(id){
+        for(const item of this.transaction){
+            if(item.id === id){
+                return item
+            }
+        }
+        return "Empty"
+    },
+    getTransactionTotal(type){
+        let sum = 0;
+        for(const item of this.transaction){
+            if(item.type === type){
+                sum += item.amount
+            }
+        }
+        return sum
+    }
 }
-account.deposit(1000);
+
+account.deposit(12678);
+account.deposit(12678);
+account.deposit(12678);
+account.withdraw(435);
+console.log(account.getTransactionDetails(1758648235203));
+console.log(account.getTransactionTotal(Transaction.DEPOSIT));
+console.log(account.getTransactionTotal(Transaction.WITHDRAW));
