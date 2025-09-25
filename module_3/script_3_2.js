@@ -19,3 +19,28 @@
 // console.log(html);
 // console.log(js);
 // console.log(react);
+
+//3
+const user = [
+    {
+        name : "User 1",
+        language : "JS"
+    },
+        {
+        name : "User 2",
+        language: "CSS"
+    },
+        {
+        name : "User 3",
+        language : "HTML"
+    },
+        {
+        name : "User 4",
+        language : "Python"
+    }
+]
+
+for(const {name, language} of user){
+    console.log(name);
+    
+}
