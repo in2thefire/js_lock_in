@@ -21,37 +21,51 @@
 // console.log(react);
 
 //3
-const user = [
-    {
-        name : "User 1",
-        language : "JS",
-        own: {
-            car: "audi"
-        }
-    },
-        {
-        name : "User 2",
-        language: "CSS",
-        own: {
-           car: "bmw"
-        }
-    },
-        {
-        name : "User 3",
-        language : "HTML",
-        own: { 
-            car: "mersedes"
-        }
-    },
-        {
-        name : "User 4",
-        language : "Python",
-        own: {
-            car: "volvo"
-        }
-    }
-]
+// const user = [
+//     {
+//         name : "User 1",
+//         language : "JS",
+//         own: {
+//             car: "audi"
+//         }
+//     },
+//         {
+//         name : "User 2",
+//         language: "CSS",
+//         own: {
+//            car: "bmw"
+//         }
+//     },
+//         {
+//         name : "User 3",
+//         language : "HTML",
+//         own: { 
+//             car: "mersedes"
+//         }
+//     },
+//         {
+//         name : "User 4",
+//         language : "Python",
+//         own: {
+//             car: "volvo"
+//         }
+//     }
+// ]
 
-for(const {name, language, own : {car} } of user){
-    console.log(`${name} own ${car}`);
-}
+// for(const {name, language, own : {car} } of user){
+//     console.log(`${name} own ${car}`);
+// }
+
+//4
+// /**
+//  * Calculating BMI 
+//  * @param {Object} obj
+//  * @returns {Number} BMI
+//  */
+// function calcBMI({weight, height}){
+//     const numericWeight = Number(weight.replace(',','.'));
+//     const numericHeight = Number(height.replace(',','.'));
+//     return Number((numericWeight / numericHeight **2).toFixed(1))
+
+// }
+// console.log(calcBMI({weight: '88,3', height: "1.75"}));
