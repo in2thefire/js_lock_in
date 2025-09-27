@@ -243,7 +243,29 @@
 
 //   // Change code above this line
 
-//14
+// //14
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function getAllPropValues(propName) {
+//   // Change code below this line
+//   let values = [];
+//   for(const product of products){
+//         if(product.hasOwnProperty(propName)){
+//                values.push(product[propName]);
+//         }
+//   }
+// return values
+
+//   // Change code above this line
+// }
+// console.log(getAllPropValues("price"));
+
+//15
 const products = [
   { name: "Radar", price: 1300, quantity: 4 },
   { name: "Scanner", price: 2700, quantity: 3 },
@@ -251,16 +273,16 @@ const products = [
   { name: "Grip", price: 1200, quantity: 9 },
 ];
 
-function getAllPropValues(propName) {
+function calculateTotalPrice(productName) {
   // Change code below this line
-  let values = [];
-  for(const product of products){
-        if(product.hasOwnProperty(propName)){
-               values.push(product[propName]);
+    let totalPrice = 0;
+    for(const product of products){
+        if(product.name === productName){
+            totalPrice = product['price'] * product['quantity'];
         }
-  }
-return values
+    }
+    return totalPrice
 
   // Change code above this line
 }
-console.log(getAllPropValues("price"));
+console.log(calculateTotalPrice("Radar"));
