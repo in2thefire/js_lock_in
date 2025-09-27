@@ -69,3 +69,26 @@
 
 // }
 // console.log(calcBMI({weight: '88,3', height: "1.75"}));
+
+//5
+function createdContact(partialContact){
+    return {
+        id: generateId(),
+        createdAt: new Date(), 
+        list: 'default',
+        ...partialContact,
+    }
+}
+console.log(createdContact({
+    name : 'Bohdan',
+    email : 'in2thefiree@gmail.com',
+    list: 'friends',
+}));
+console.log(createdContact({
+    name: 'Andrew',
+    email: 'andrei@gmail.com'
+}));
+
+function generateId(){
+    return ' ' + Math.random().toString(36).substr(2, 9);
+}
