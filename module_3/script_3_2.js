@@ -266,23 +266,51 @@
 // console.log(getAllPropValues("price"));
 
 //15
-const products = [
-  { name: "Radar", price: 1300, quantity: 4 },
-  { name: "Scanner", price: 2700, quantity: 3 },
-  { name: "Droid", price: 400, quantity: 7 },
-  { name: "Grip", price: 1200, quantity: 9 },
-];
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
 
-function calculateTotalPrice(productName) {
-  // Change code below this line
-    let totalPrice = 0;
-    for(const product of products){
-        if(product.name === productName){
-            totalPrice = product['price'] * product['quantity'];
-        }
-    }
-    return totalPrice
+// function calculateTotalPrice(productName) {
+//   // Change code below this line
+//     let totalPrice = 0;
+//     for(const product of products){
+//         if(product.name === productName){
+//             totalPrice = product['price'] * product['quantity'];
+//         }
+//     }
+//     return totalPrice
 
-  // Change code above this line
-}
-console.log(calculateTotalPrice("Radar"));
+//   // Change code above this line
+// }
+// console.log(calculateTotalPrice("Radar"));
+
+//16
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+// // Change code below this line
+// const {yesterday, today, tomorrow} = highTemperatures;
+// // Change code above this line
+// const meanTemperature = (yesterday + today + tomorrow) / 3;
+
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+// // Change code below this line
+// const {
+//     yesterday : highYesterday,
+//     today : highToday,
+//     tomorrow :highTomorrow,
+//     highIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg"
+// } = highTemperatures;
+
+
+// // Change code above this line
+// const meanTemperature = (highYesterday + highToday + highTomorrow) / 3;
