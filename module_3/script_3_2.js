@@ -94,25 +94,46 @@
 // }
 
 //6
-function transformUsername({firstName, secondName, ...props}){
-    return {
-        fullName : `${firstName} ${secondName}`,
-        ...props
-    }
+// function transformUsername({firstName, secondName, ...props}){
+//     return {
+//         fullName : `${firstName} ${secondName}`,
+//         ...props
+//     }
 
+// }   
+// console.log(transformUsername({
+//     id : 1,
+//     firstName : 'Mango',
+//     secondName : 'Polly',
+//     email: 'mango@gmail.com',
+//     friendsCount : 20,
+// }));
+
+// console.log(transformUsername({
+//     id : 2,
+//     firstName : 'Lime',
+//     secondName : 'Per',
+//     email: 'lime@gmail.com',
+//     friendsCount : 23,
+// }));
+
+//7
+const keys = [];
+const values = [];
+const advert = {
+  service: "apt",
+};
+const apartment = Object.create(advert);
+apartment.descr = "Spacious apartment in the city center";
+apartment.rating = 4;
+apartment.price = 2153;
+
+for (const key in apartment) {
+  // Change code below this line
+  if(apartment.hasOwnProperty(key)){
+  keys.push(key);
+  values.push(apartment[key]);
+  }
+
+  // Change code above this line
 }
-console.log(transformUsername({
-    id : 1,
-    firstName : 'Mango',
-    secondName : 'Polly',
-    email: 'mango@gmail.com',
-    friendsCount : 20,
-}));
-
-console.log(transformUsername({
-    id : 2,
-    firstName : 'Lime',
-    secondName : 'Per',
-    email: 'lime@gmail.com',
-    friendsCount : 23,
-}));
