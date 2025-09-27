@@ -176,3 +176,18 @@
 // }
 // console.log(values);
 // console.log(keys);
+
+//10
+// function countProps(object) {
+//   // Change code below this line
+//   const keys = Object.keys(object);
+//   const propCount = keys.length;
+
+//   return propCount;
+//   // Change code above this line
+// }
+// console.log(countProps({
+//     name : 'Bohdan',
+//     email : 'in2thefiree@gmail.com',
+//     list: 'friends',
+// }));
