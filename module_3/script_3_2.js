@@ -71,24 +71,48 @@
 // console.log(calcBMI({weight: '88,3', height: "1.75"}));
 
 //5
-function createdContact(partialContact){
+// function createdContact(partialContact){
+//     return {
+//         id: generateId(),
+//         createdAt: new Date(), 
+//         list: 'default',
+//         ...partialContact,
+//     }
+// }
+// console.log(createdContact({
+//     name : 'Bohdan',
+//     email : 'in2thefiree@gmail.com',
+//     list: 'friends',
+// }));
+// console.log(createdContact({
+//     name: 'Andrew',
+//     email: 'andrei@gmail.com'
+// }));
+
+// function generateId(){
+//     return ' ' + Math.random().toString(36).substr(2, 9);
+// }
+
+//6
+function transformUsername({firstName, secondName, ...props}){
     return {
-        id: generateId(),
-        createdAt: new Date(), 
-        list: 'default',
-        ...partialContact,
+        fullName : `${firstName} ${secondName}`,
+        ...props
     }
+
 }
-console.log(createdContact({
-    name : 'Bohdan',
-    email : 'in2thefiree@gmail.com',
-    list: 'friends',
-}));
-console.log(createdContact({
-    name: 'Andrew',
-    email: 'andrei@gmail.com'
+console.log(transformUsername({
+    id : 1,
+    firstName : 'Mango',
+    secondName : 'Polly',
+    email: 'mango@gmail.com',
+    friendsCount : 20,
 }));
 
-function generateId(){
-    return ' ' + Math.random().toString(36).substr(2, 9);
-}
+console.log(transformUsername({
+    id : 2,
+    firstName : 'Lime',
+    secondName : 'Per',
+    email: 'lime@gmail.com',
+    friendsCount : 23,
+}));
