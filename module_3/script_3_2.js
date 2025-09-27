@@ -342,24 +342,40 @@
 
 
 // Change code below this line
-function calculateMeanTemperature(forecast) {
-    const {
-        today : {
-            low : todayLow,
-            high : todayHigh
-        },
-        tomorrow : {
-            low : tomorrowLow,
-            high: tomorrowHigh
-        }
-    } = forecast
+// function calculateMeanTemperature(forecast) {
+//     const {
+//         today : {
+//             low : todayLow,
+//             high : todayHigh
+//         },
+//         tomorrow : {
+//             low : tomorrowLow,
+//             high: tomorrowHigh
+//         }
+//     } = forecast
 
+//   // Change code above this line
+//   return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
+// }
+
+// console.log(calculateMeanTemperature(
+// {
+//   today: { low: 10, high: 20 },
+//   tomorrow: { low: 20, high: 30 }
+// }));
+
+function makeTask(data) {
+  const completed = false;
+  const category = "General";
+  const priority = "Normal";
+  // Change code below this line
+return {
+    category : category,
+    completed : completed,
+    priority : priority,
+    ...data 
+}
   // Change code above this line
-  return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
 }
 
-console.log(calculateMeanTemperature(
-{
-  today: { low: 10, high: 20 },
-  tomorrow: { low: 20, high: 30 }
-}));
+console.log(makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" }));
