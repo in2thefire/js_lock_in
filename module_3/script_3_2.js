@@ -471,3 +471,17 @@
 // console.log(atTheOldToad.addPotion("Invisibility"));
 // console.log(atTheOldToad.addPotion('Power potion'));
 // console.log(atTheOldToad.potions);
+
+const atTheOldToad = {
+  potions: ["Speed potion", "Dragon breath", "Stone skin"],
+  removePotion(potionName) {
+    // Change code below this line
+    deleteIDX = this.potions.indexOf(potionName);
+    this.potions.splice(deleteIDX, 1)
+
+    // Change code above this line
+  },
+};
+
+atTheOldToad.removePotion("Dragon breath");
+console.log(atTheOldToad.potions);
