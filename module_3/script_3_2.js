@@ -490,8 +490,12 @@ const atTheOldToad = {
   potions: ["Speed potion", "Dragon breath", "Stone skin"],
   updatePotionName(oldName, newName) {
     // Change code below this line
-
-
+   const idx = this.potions.indexOf(oldName)
+    for(const potion of this.potions){
+      if(this.potions[idx] === oldName){
+        this.potions[idx] = newName
+      }
+    }
     // Change code above this line
   },
 };
