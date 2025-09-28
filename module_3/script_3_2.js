@@ -458,3 +458,16 @@
 // console.log(bookShelf.updateBook("Haze", "Dungeon chronicles"));
 // console.log(bookShelf.updateBook("The last kingdom", "Dune"));
 // console.log(bookShelf);
+
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   addPotion(potionName) {
+//     // Change code below this line
+//     this.potions.push(potionName);
+//     // Change code above this line
+//   },
+// };
+
+// console.log(atTheOldToad.addPotion("Invisibility"));
+// console.log(atTheOldToad.addPotion('Power potion'));
+// console.log(atTheOldToad.potions);
