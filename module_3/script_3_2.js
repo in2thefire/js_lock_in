@@ -364,18 +364,30 @@
 //   tomorrow: { low: 20, high: 30 }
 // }));
 
-function makeTask(data) {
-  const completed = false;
-  const category = "General";
-  const priority = "Normal";
-  // Change code below this line
-return {
-    category : category,
-    completed : completed,
-    priority : priority,
-    ...data 
-}
+// function makeTask(data) {
+//   const completed = false;
+//   const category = "General";
+//   const priority = "Normal";
+//   // Change code below this line
+// return {
+//     category : category,
+//     completed : completed,
+//     priority : priority,
+//     ...data 
+// }
+//   // Change code above this line
+// }
+
+// console.log(makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" }));
+
+// Change code below this line
+function add(...args) {
+  let sum = 0;
+  for(const arg of args){
+    sum += arg;
+  }
+  return sum
   // Change code above this line
 }
 
-console.log(makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" }));
+console.log(add(15, 27));
