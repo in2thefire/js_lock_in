@@ -407,15 +407,54 @@
 // }
 
 // Change code below this line
-function findMatches(arr, ...args) {
-  const matches = []; // Don't change this line
-  for(arg of args){
-    if(arr.includes(arg)){
-      matches.push(arg)
-    }
-  }
+// function findMatches(arr, ...args) {
+//   const matches = []; // Don't change this line
+//   for(arg of args){
+//     if(arr.includes(arg)){
+//       matches.push(arg)
+//     }
+//   }
 
-  // Change code above this line
-  return matches;
-}
-console.log(findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7));
+//   // Change code above this line
+//   return matches;
+// }
+// console.log(findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7));
+
+// const bookShelf = {
+//   // Change code below this line
+//   books: ["The last kingdom", "The guardian of dreams"],
+//   getBooks() {
+//     return "Returning all books";
+//   },
+//   addBook(bookName) {
+//     return `Adding book ${bookName}`;
+//   },
+//   removeBook(bookName){
+//     return `Deleting book ${bookName}`;
+//   },
+//   updateBook(oldName, newName){
+//     return `Updating book ${oldName} to ${newName}`
+//   }
+//   // Change code above this line
+// };
+
+
+// const bookShelf = {
+//   books: ["The last kingdom", "Haze", "The guardian of dreams"],
+//   updateBook(oldName, newName) {
+//     // Change code below this line
+//     for(const book in this.books){
+//       if(this.books[book] === oldName){
+//         this.books[book] = newName
+//         return `Updating book ${oldName} to ${newName}`
+//       }
+//     }
+//     return 'There is no book like that'
+
+//     // Change code above this line
+//   },
+// };
+
+// console.log(bookShelf.updateBook("Haze", "Dungeon chronicles"));
+// console.log(bookShelf.updateBook("The last kingdom", "Dune"));
+// console.log(bookShelf);
