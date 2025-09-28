@@ -381,13 +381,41 @@
 // console.log(makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" }));
 
 // Change code below this line
-function add(...args) {
-  let sum = 0;
-  for(const arg of args){
-    sum += arg;
-  }
-  return sum
-  // Change code above this line
-}
+// function add(...args) {
+//   let sum = 0;
+//   for(const arg of args){
+//     sum += arg;
+//   }
+//   return sum
+//   // Change code above this line
+// }
 
-console.log(add(15, 27));
+// console.log(add(15, 27));
+
+// // Change code below this line
+// function addOverNum(number, ...args) {
+//   let total = 0;
+
+//   for (const arg of args) {
+//       if(arg > number){
+//       total += arg;
+//     }
+//   }
+
+//   return total;
+//   // Change code above this line
+// }
+
+// Change code below this line
+function findMatches(arr, ...args) {
+  const matches = []; // Don't change this line
+  for(arg of args){
+    if(arr.includes(arg)){
+      matches.push(arg)
+    }
+  }
+
+  // Change code above this line
+  return matches;
+}
+console.log(findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7));
