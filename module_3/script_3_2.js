@@ -486,16 +486,65 @@
 // atTheOldToad.removePotion("Dragon breath");
 // console.log(atTheOldToad.potions);
 
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   updatePotionName(oldName, newName) {
+//     // Change code below this line
+//    const idx = this.potions.indexOf(oldName)
+//     for(const potion of this.potions){
+//       if(this.potions[idx] === oldName){
+//         this.potions[idx] = newName
+//       }
+//     }
+//     // Change code above this line
+//   },
+// };
+
+
+//------------------------- atTheOldToad
+
+
 const atTheOldToad = {
-  potions: ["Speed potion", "Dragon breath", "Stone skin"],
-  updatePotionName(oldName, newName) {
-    // Change code below this line
-   const idx = this.potions.indexOf(oldName)
+  potions: [
+    { name: "Speed potion", price: 460 },
+    { name: "Dragon breath", price: 780 },
+    { name: "Stone skin", price: 520 },
+  ],
+  // Change code below this line
+  getPotions() {
+    let names = [];
     for(const potion of this.potions){
-      if(this.potions[idx] === oldName){
-        this.potions[idx] = newName
+      if(potion.name){
+        names.push(potion.name)
       }
     }
-    // Change code above this line
+    return names;
   },
-};
+  addPotion(newPotion) {
+    for (const potion of this.potions) {
+      if (potion.name === newPotion.name) {
+        return `Error! Potion ${newPotion.name} is already in your inventory!`;
+      }
+    }
+    this.potions.push(newPotion);
+  },
+ removePotion(potionName) {
+  for (let i = 0; i < this.potions.length; i++) {
+    if (this.potions[i].name === potionName) {
+      this.potions.splice(i, 1);
+      return; // зупиняємо цикл після видалення
+    }
+  }
+  return `Potion ${potionName} is not in inventory!`;
+},
+  updatePotionName(oldName, newName) {
+    for(i = 0; i < this.potions.lengthl; i +=1){
+      if(this.potions[i].name === oldName){
+        this.potions[i].name = newName
+        return
+      }
+    }
+  // Change code above this line
+}
+}
+
