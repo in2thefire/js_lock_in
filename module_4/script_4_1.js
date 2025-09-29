@@ -24,4 +24,10 @@
 
 // hi()
 
-function
+const arr = [1,3,4,7,9,2];
+function add(arr){
+    total = arr[0];
+    for(i = 1; i < arr.length; i += 1){
+        total += arr[i];
+    }
+}
