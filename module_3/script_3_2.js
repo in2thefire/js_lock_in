@@ -510,16 +510,13 @@ const atTheOldToad = {
     { name: "Dragon breath", price: 780 },
     { name: "Stone skin", price: 520 },
   ],
-  // Change code below this line
+
+  // Повертає масив зілля
   getPotions() {
-    let names = [];
-    for(const potion of this.potions){
-      if(potion.name){
-        names.push(potion.name)
-      }
-    }
-    return names;
+    return this.potions;
   },
+
+  // Додає нове зілля, перевіряючи на дубль
   addPotion(newPotion) {
     for (const potion of this.potions) {
       if (potion.name === newPotion.name) {
@@ -528,23 +525,27 @@ const atTheOldToad = {
     }
     this.potions.push(newPotion);
   },
- removePotion(potionName) {
-  for (let i = 0; i < this.potions.length; i++) {
-    if (this.potions[i].name === potionName) {
-      this.potions.splice(i, 1);
-      return; // зупиняємо цикл після видалення
-    }
-  }
-  return `Potion ${potionName} is not in inventory!`;
-},
-  updatePotionName(oldName, newName) {
-    for(i = 0; i < this.potions.lengthl; i +=1){
-      if(this.potions[i].name === oldName){
-        this.potions[i].name = newName
-        return
+
+  // Видаляє зілля за назвою
+  removePotion(potionName) {
+    for (let i = 0; i < this.potions.length; i++) {
+      if (this.potions[i].name === potionName) {
+        this.potions.splice(i, 1);
+        return;
       }
     }
-  // Change code above this line
-}
-}
+    return `Potion ${potionName} is not in inventory!`;
+  },
+
+  // Оновлює назву зілля
+  updatePotionName(oldName, newName) {
+    for (let i = 0; i < this.potions.length; i++) {
+      if (this.potions[i].name === oldName) {
+        this.potions[i].name = newName;
+        return;
+      }
+    }
+    return `Potion ${oldName} is not in inventory!`;
+  }
+};
 
