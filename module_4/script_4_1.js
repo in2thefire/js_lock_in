@@ -41,20 +41,44 @@
 
 // console.log(arr);
 
-const arr = [1,3,7,9,2,4,5,6];
+// const arr = [1,3,7,9,2,4,5,6];
 
-function each(arr , callback){
-    let total = arr[0];
-    for(let i = 0; i < arr.length; i += 1){
-        total = callback(total, arr[i]);
+// function each(arr , callback){
+//     let total = arr[0];
+//     for(let i = 0; i < arr.length; i += 1){
+//         total = callback(total, arr[i]);
+//     }
+//     return total
+// }
+
+// const mult = (a,b) => a * b;
+// const devision = (a,b) => a / b;
+// const add = (a,b) => a + b;
+
+// console.log(each(arr,mult));
+// console.log(each(arr,add));
+// console.log(each(arr,devision));
+
+function createProduct(obj, callback){
+    const product = {
+        id : Date.now(),
+        ...obj  
     }
-    return total
+    callback(product);
 }
-
-const mult = (a,b) => a * b;
-const devision = (a,b) => a / b;
-const add = (a,b) => a + b;
-
-console.log(each(arr,mult));
-console.log(each(arr,add));
-console.log(each(arr,devision));
+const logProduct = (product) => {
+    console.log(product.name);
+}
+const logTotalPrice = (product) => {
+    console.log(product.price * product.quantity);
+}
+createProduct({
+    name: 'Apple',
+    price: 40,
+    quantity: 4
+}, logProduct)
+createProduct({
+    name: 'Apple',
+    price: 40,
+    quantity: 4
+}, logTotalPrice);
