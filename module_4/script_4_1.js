@@ -59,26 +59,59 @@
 // console.log(each(arr,add));
 // console.log(each(arr,devision));
 
-function createProduct(obj, callback){
-    const product = {
-        id : Date.now(),
-        ...obj  
+// function createProduct(obj, callback){
+//     const product = {
+//         id : Date.now(),
+//         ...obj  
+//     }
+//     callback(product);
+// }
+// const logProduct = (product) => {
+//     console.log(product.name);
+// }
+// const logTotalPrice = (product) => {
+//     console.log(product.price * product.quantity);
+// }
+// createProduct({
+//     name: 'Apple',
+//     price: 40,
+//     quantity: 4
+// }, logProduct)
+// createProduct({
+//     name: 'Apple',
+//     price: 40,
+//     quantity: 4
+// }, logTotalPrice);
+
+const TRANSACTION_LIMIT = 1000;
+const account = {
+    username: 'in2thefire',
+    balance: 700,
+    withdraw(amount, onSuccess, onError){
+        if(amount <= TRANSACTION_LIMIT){
+            this.balance -= amount;
+            onSuccess(amount, this.balance)
+        }else{
+            onError(amount,this.balance)
+        }
+    },
+    deposit(amount, onSuccess, onError){
+        if(amount <= TRANSACTION_LIMIT){
+            this.balance += amount;
+            onSuccess(amount,this.balance)
+        }else{
+            onError(amount,this.balance)
+        }
+    },
     }
-    callback(product);
+
+function handleSuccess(amount, newBalance){
+    console.log(`Success ${amount}, new balance ${newBalance}`);
 }
-const logProduct = (product) => {
-    console.log(product.name);
+function handleError(amount, newBalance){
+    console.log(`Error ${amount}, new balance ${newBalance}`);
 }
-const logTotalPrice = (product) => {
-    console.log(product.price * product.quantity);
-}
-createProduct({
-    name: 'Apple',
-    price: 40,
-    quantity: 4
-}, logProduct)
-createProduct({
-    name: 'Apple',
-    price: 40,
-    quantity: 4
-}, logTotalPrice);
+
+
+account.withdraw(300,handleSuccess,handleError);
+account.deposit(800,handleSuccess,handleError);
