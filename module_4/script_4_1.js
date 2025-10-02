@@ -93,14 +93,16 @@ const account = {
             return
         }else if(amount > this.balance){
             onError(amount,this.balance)
-        }else{
-            onSuccess(amount,this.balance)
+            return
         }
+            this.balance -= amount;
+            onSuccess(amount,this.balance)
     },
     deposit(amount, onSuccess, onError){
         if(amount <= TRANSACTION_LIMIT){
             this.balance += amount;
             onSuccess(amount,this.balance)
+            return
         }else{
             onError(amount,this.balance)
         } 
