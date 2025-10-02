@@ -88,11 +88,13 @@ const account = {
     username: 'in2thefire',
     balance: 700,
     withdraw(amount, onSuccess, onError){
-        if(amount <= TRANSACTION_LIMIT){
-            this.balance -= amount;
-            onSuccess(amount, this.balance)
-        }else{
+        if(amount > TRANSACTION_LIMIT){
             onError(amount,this.balance)
+            return
+        }else if(amount > this.balance){
+            onError(amount,this.balance)
+        }else{
+            onSuccess(amount,this.balance)
         }
     },
     deposit(amount, onSuccess, onError){
@@ -101,7 +103,7 @@ const account = {
             onSuccess(amount,this.balance)
         }else{
             onError(amount,this.balance)
-        }
+        } 
     },
     }
 
