@@ -83,39 +83,39 @@
 //     quantity: 4
 // }, logTotalPrice);
 
-const TRANSACTION_LIMIT = 1000;
-const account = {
-    username: 'in2thefire',
-    balance: 700,
-    withdraw(amount, onSuccess, onError){
-        if(amount > TRANSACTION_LIMIT){
-            onError(amount,this.balance)
-            return
-        }else if(amount > this.balance){
-            onError(amount,this.balance)
-            return
-        }
-            this.balance -= amount;
-            onSuccess(amount,this.balance)
-    },
-    deposit(amount, onSuccess, onError){
-        if(amount <= TRANSACTION_LIMIT){
-            this.balance += amount;
-            onSuccess(amount,this.balance)
-            return
-        }else{
-            onError(amount,this.balance)
-        } 
-    },
-    }
+// const TRANSACTION_LIMIT = 1000;
+// const account = {
+//     username: 'in2thefire',
+//     balance: 700,
+//     withdraw(amount, onSuccess, onError){
+//         if(amount > TRANSACTION_LIMIT){
+//             onError(amount,this.balance)
+//             return
+//         }else if(amount > this.balance){
+//             onError(amount,this.balance)
+//             return
+//         }
+//             this.balance -= amount;
+//             onSuccess(amount,this.balance)
+//     },
+//     deposit(amount, onSuccess, onError){
+//         if(amount <= TRANSACTION_LIMIT){
+//             this.balance += amount;
+//             onSuccess(amount,this.balance)
+//             return
+//         }else{
+//             onError(amount,this.balance)
+//         } 
+//     },
+//     }
 
-function handleSuccess(amount, newBalance){
-    console.log(`Success ${amount}, new balance ${newBalance}`);
-}
-function handleError(amount, newBalance){
-    console.log(`Error ${amount}, new balance ${newBalance}`);
-}
+// function handleSuccess(amount, newBalance){
+//     console.log(`Success ${amount}, new balance ${newBalance}`);
+// }
+// function handleError(amount, newBalance){
+//     console.log(`Error ${amount}, new balance ${newBalance}`);
+// }
 
 
-account.withdraw(300,handleSuccess,handleError);
-account.deposit(800,handleSuccess,handleError);
+// account.withdraw(300,handleSuccess,handleError);
+// account.deposit(800,handleSuccess,handleError);
