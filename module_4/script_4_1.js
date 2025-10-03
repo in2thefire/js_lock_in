@@ -155,12 +155,25 @@
 
 
 
-function calculateTotalPrice(orderedItems) {
-  let totalPrice = 0;
+// function calculateTotalPrice(orderedItems) {
+//   let totalPrice = 0;
+//   // Change code below this line
+//     orderedItems.forEach(item => {
+//         totalPrice += item
+//     });
+//   // Change code above this line
+//   return totalPrice;
+// }
+
+
+function filterArray(numbers, value) {
+  const filteredNumbers = [];
   // Change code below this line
-    orderedItems.forEach(item => {
-        totalPrice += item
-    });
+numbers.forEach(item => {
+    if(item > value){
+        filteredNumbers.push(item)
+    }
+});
   // Change code above this line
-  return totalPrice;
+  return filteredNumbers;
 }
