@@ -125,29 +125,42 @@
 
 // }
 
- const pizzaPalace = {
-  pizzas: ["Ultracheese", "Smoked", "Four meats"],
-  order(pizzaName, OnSuccess, OnError) {
-   if(this.pizzas.includes(pizzaName)){
-        return OnSuccess(pizzaName)   
-    }
-    return OnError(`There is no pizza with a name ${pizzaName} in the assortment.`)
-  },
-};
-// Change code above this line
+//  const pizzaPalace = {
+//   pizzas: ["Ultracheese", "Smoked", "Four meats"],
+//   order(pizzaName, OnSuccess, OnError) {
+//    if(this.pizzas.includes(pizzaName)){
+//         return OnSuccess(pizzaName)   
+//     }
+//     return OnError(`There is no pizza with a name ${pizzaName} in the assortment.`)
+//   },
+// };
+// // Change code above this line
 
-// Callback for onSuccess
-function makePizza(pizzaName) {
-  return `Your order is accepted. Cooking pizza ${pizzaName}.`;
+// // Callback for onSuccess
+// function makePizza(pizzaName) {
+//   return `Your order is accepted. Cooking pizza ${pizzaName}.`;
+// }
+
+// // Callback for onError
+// function onOrderError(error) {
+//   return `Error! ${error}`;
+// }
+
+// // Method calls with callbacks
+// pizzaPalace.order("Smoked", makePizza, onOrderError);
+// pizzaPalace.order("Four meats", makePizza, onOrderError);
+// pizzaPalace.order("Big Mike", makePizza, onOrderError);
+// pizzaPalace.order("Vienna", makePizza, onOrderError);
+
+
+
+
+function calculateTotalPrice(orderedItems) {
+  let totalPrice = 0;
+  // Change code below this line
+    orderedItems.forEach(item => {
+        totalPrice += item
+    });
+  // Change code above this line
+  return totalPrice;
 }
-
-// Callback for onError
-function onOrderError(error) {
-  return `Error! ${error}`;
-}
-
-// Method calls with callbacks
-pizzaPalace.order("Smoked", makePizza, onOrderError);
-pizzaPalace.order("Four meats", makePizza, onOrderError);
-pizzaPalace.order("Big Mike", makePizza, onOrderError);
-pizzaPalace.order("Vienna", makePizza, onOrderError);
