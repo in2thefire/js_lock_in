@@ -212,16 +212,29 @@
 
 // Change code below this line
 
-const filterArray = (numbers, value) => {
-  const filteredNumbers = [];
+// const filterArray = (numbers, value) => {
+//   const filteredNumbers = [];
 
-  numbers.forEach(number => {
-    if (number > value) {
-      filteredNumbers.push(number);
+//   numbers.forEach(number => {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   });
+
+//   // Change code above this line
+//   return filteredNumbers;
+// }
+
+// Change code below this line
+const getCommonElements = (firstArray, secondArray) =>{
+  const commonElements = [];
+
+  firstArray.forEach(element => {
+    if (secondArray.includes(element)) {
+      commonElements.push(element);
     }
   });
 
   // Change code above this line
-  return filteredNumbers;
+  return commonElements;
 }
-
