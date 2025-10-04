@@ -166,14 +166,46 @@
 // }
 
 
-function filterArray(numbers, value) {
-  const filteredNumbers = [];
-  // Change code below this line
-numbers.forEach(item => {
-    if(item > value){
-        filteredNumbers.push(item)
-    }
-});
-  // Change code above this line
-  return filteredNumbers;
-}
+// function filterArray(numbers, value) {
+//   const filteredNumbers = [];
+//   // Change code below this line
+// numbers.forEach(item => {
+//     if(item > value){
+//         filteredNumbers.push(item)
+//     }
+// });
+//   // Change code above this line
+//   return filteredNumbers;
+// }
+
+
+// function getCommonElements(firstArray, secondArray) {
+//   const commonElements = [];
+//   // Change code below this line
+//     firstArray.forEach(item => {
+//         if(secondArray.includes(item)){
+//             commonElements.push(item)
+//         }
+//     });
+//   return commonElements;
+//   // Change code above this line
+// }
+
+// Change code below this line
+
+// Change code below this line
+// const calculateTotalPrice = (quantity, pricePerItem) =>  quantity * pricePerItem;
+
+// Change code above this line
+// Change code below this line
+// Change code below this line
+//   const calculateTotalPrice = orderedItems => {
+//   let totalPrice = 0;
+
+//   orderedItems.forEach(item  => {
+//     totalPrice += item;
+//   });
+
+//   return totalPrice;
+// }
+// // Change code above this line
