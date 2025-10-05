@@ -25,7 +25,10 @@
 // console.log(result2);
 // console.log(result1);
 
-const arr = ["a", "b", "S", "A", "d"];
-// const result = arr.sort();
-const result = arr.sort((a, b) => a.localeCompare(b));
-console.table(result);
+// const arr = ["a", "b", "S", "A", "d"];
+// // const result = arr.sort();
+// const result = arr.sort((a, b) => a.localeCompare(b));
+// console.table   (result);
+
+const arr = [11, 23, 15, 65, 124, 25, 76, 34, 61, 32, 7, 2, 15, 17, 99];
+const result = arr.reduce((acc, item) => {}, 0);
