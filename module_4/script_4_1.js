@@ -226,15 +226,32 @@
 // }
 
 // Change code below this line
-const getCommonElements = (firstArray, secondArray) =>{
-  const commonElements = [];
+// const getCommonElements = (firstArray, secondArray) =>{
+//   const commonElements = [];
 
-  firstArray.forEach(element => {
-    if (secondArray.includes(element)) {
-      commonElements.push(element);
-    }
-  });
+//   firstArray.forEach(element => {
+//     if (secondArray.includes(element)) {
+//       commonElements.push(element);
+//     }
+//   });
 
-  // Change code above this line
-  return commonElements;
-}
+//   // Change code above this line
+//   return commonElements;
+// }
+
+// function changeEven(numbers, value) {
+//   // Change code below this line
+//   const newarr = [];
+//   numbers.forEach(element => {
+//     if(element % 2 === 0){
+//         let result = element + value;
+//         newarr.push(result)
+//     }else{
+//         newarr.push(element )
+//     }
+//   });
+//   return newarr
+//   // Change code above this line
+// }
+
+// console.log(changeEven([1, 2, 3, 4, 5], 10));
