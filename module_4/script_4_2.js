@@ -8,6 +8,13 @@
 // const findArr = arr.find(item => item > 5)
 // console.log(findArr);
 
-const arr = [1, 2, 3, 4, 5, 6, 7];
-const result = arr.filter((item) => !(item % 2)).map((item) => item * 2);
+// const arr = [1, 2, 3, 4, 5, 6, 7];
+// const result = arr.filter((item) => !(item % 2)).map((item) => item * 2);
+// console.log(result);
+
+const arr = [1, 3, 5, 7];
+const result = arr.every((item) => typeof item === "number");
 console.log(result);
+
+const result2 = arr.some((item) => !(item % 2));
+console.log(result2);
