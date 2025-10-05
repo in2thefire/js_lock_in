@@ -7,3 +7,7 @@
 
 // const findArr = arr.find(item => item > 5)
 // console.log(findArr);
+
+const arr = [1, 2, 3, 4, 5, 6, 7];
+const result = arr.filter((item) => !(item % 2)).map((item) => item * 2);
+console.log(result);
