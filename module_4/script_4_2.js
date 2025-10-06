@@ -116,8 +116,17 @@ const cars = [
   },
 ];
 
-const getModels = (cars) => {
-  return cars.map((model) => model.model);
-};
+// const getModels = (cars) => {
+//   return cars.map((model) => model.model);
+// };
 
-console.table(getModels(cars));
+// console.table(getModels(cars));
+
+// const makeCarsWithDiscount = (cars, discount) => {
+//   return cars.map(car => ({
+//     ...car,
+//     price : car.price * (1 - discount)
+//   }));
+// };
+// console.table(makeCarsWithDiscount(cars, 0.2));
+// console.table(makeCarsWithDiscount(cars, 0.4));
