@@ -138,8 +138,20 @@ const cars = [
 // console.log(filterByPrice(cars, 30000));
 // console.log(filterByPrice(cars, 25000));
 
-const getCarsOnSale = (cars) => {
-  return cars.filter(({ onSale }) => onSale);
+// const getCarsOnSale = (cars) => {
+//   return cars.filter(({ onSale }) => onSale);
+// };
+
+// console.log(getCarsOnSale(cars));
+// const getCarsWithType = (cars, type) => {
+//   return cars.filter(({ type: carType }) => type === carType);
+// };
+
+// console.log(getCarsWithType(cars, "sedan"));
+// console.log(getCarsWithType(cars, "suv"));
+
+const getCarsWithModel = (cars, model) => {
+  return cars.filter(({ model: carModel }) => model === carModel);
 };
 
-console.log(getCarsOnSale(cars));
+console.log(getCarsWithModel(cars, "Fusion"));
