@@ -150,8 +150,8 @@ const cars = [
 // console.log(getCarsWithType(cars, "sedan"));
 // console.log(getCarsWithType(cars, "suv"));
 
-const getCarsWithModel = (cars, model) => {
-  return cars.filter(({ model: carModel }) => model === carModel);
-};
+// const getCarsWithModel = (cars, model) => {
+//   return cars.find(({ model: carModel }) => model === carModel);
+// };
 
-console.log(getCarsWithModel(cars, "Fusion"));
+// console.log(getCarsWithModel(cars, "Fusion"));
