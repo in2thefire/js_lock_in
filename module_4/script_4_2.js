@@ -130,3 +130,16 @@ const cars = [
 // };
 // console.table(makeCarsWithDiscount(cars, 0.2));
 // console.table(makeCarsWithDiscount(cars, 0.4));
+
+// const filterByPrice = (cars, threshold) => {
+//   return cars.filter((car) => car.price < threshold);
+// };
+
+// console.log(filterByPrice(cars, 30000));
+// console.log(filterByPrice(cars, 25000));
+
+const getCarsOnSale = (cars) => {
+  return cars.filter(({ onSale }) => onSale);
+};
+
+console.log(getCarsOnSale(cars));
