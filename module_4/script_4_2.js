@@ -155,3 +155,12 @@ const cars = [
 // };
 
 // console.log(getCarsWithModel(cars, "Fusion"));
+
+// const sortByAscendingAmount = (cars) => {
+//   [...cars].sort((a, b) => a.amount - b.amount);
+// };
+
+const getTotalAmount = (cars) =>
+  cars.reduce((acc, { amount }) => acc + amount, 0);
+
+console.log(getTotalAmount(cars));
