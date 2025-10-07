@@ -165,6 +165,24 @@ const cars = [
 
 // console.log(getTotalAmount(cars));
 
-const getAvalableCarNames = (cars) =>
-  cars.filter(({ onSale }) => onSale).map(({ model }) => model);
-console.log(getAvalableCarNames(cars));
+// const getAvalableCarNames = (cars) =>
+//   cars
+//     .filter(({ onSale }) => onSale)
+//     .map(({ make, model }) => `${make} ${model}`);
+// console.log(getAvalableCarNames(cars));
+
+// const getSortedCarsOnSale = (cars) =>
+//   cars
+//     .filter(({ onSale }) => onSale)
+//     .sort(({ price: a }, { price: b }) => a - b);
+
+// console.log(getSortedCarsOnSale(cars));
+
+const str = "anfaofasnfajsfkaspflsckasdmaiwjdasdaskdalsc";
+
+const result = str.split("").reduce((acc, item) => {
+  acc.hasOwnProperty(item) ? (acc[item] += 1) : (acc[item] = 1);
+  return acc;
+}, {});
+
+console.log(result);
