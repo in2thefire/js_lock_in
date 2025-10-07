@@ -160,7 +160,11 @@ const cars = [
 //   [...cars].sort((a, b) => a.amount - b.amount);
 // };
 
-const getTotalAmount = (cars) =>
-  cars.reduce((acc, { amount }) => acc + amount, 0);
+// const getTotalAmount = (cars) =>
+//   cars.reduce((acc, { amount }) => acc + amount, 0);
 
-console.log(getTotalAmount(cars));
+// console.log(getTotalAmount(cars));
+
+const getAvalableCarNames = (cars) =>
+  cars.filter(({ onSale }) => onSale).map(({ model }) => model);
+console.log(getAvalableCarNames(cars));
