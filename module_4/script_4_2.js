@@ -185,4 +185,6 @@ const result = str.split("").reduce((acc, item) => {
   return acc;
 }, {});
 
-console.log(result);
+const sorted = Object.entries(result).sort((a, b) => b[1] - a[1]);
+
+console.log(sorted);
