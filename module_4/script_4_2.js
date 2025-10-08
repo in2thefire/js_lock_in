@@ -188,10 +188,16 @@ const cars = [
 // const sorted = Object.entries(result).sort((a, b) => b[1] - a[1]);
 
 // console.log(sorted);
-const arr = ["Honda", "Audi", "BMW", "Toyota", "Mersedes", "Ford", "Skoda"];
+// const arr = [];
+// // const arr = ["Honda", "Audi", "BMW", "Toyota", "Mersedes", "Ford", "Skoda"];
 
-const result = arr.reduce((acc, item, idx) => {
-  return acc + `${idx + 1} - ${item}`;
-}, "");
+// const result = arr.reduce(
+//   (acc, item, idx) => {
+//     return acc + `${idx + 1} - ${item}\n`;
+//   },
+//   arr.length
+//     ? `Загальна кількість авто - ${arr.length}: \n`
+//     : `Вибачте авто немає 😥`
+// );
 
-console.log(result);
+// console.log(result);
