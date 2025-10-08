@@ -178,13 +178,20 @@ const cars = [
 
 // console.log(getSortedCarsOnSale(cars));
 
-const str = "anfaofasnfajsfkaspflsckasdmaiwjdasdaskdalsc";
+// const str = "anfaofasnfajsfkaspflsckasdmaiwjdasdaskdalsc";
 
-const result = str.split("").reduce((acc, item) => {
-  acc.hasOwnProperty(item) ? (acc[item] += 1) : (acc[item] = 1);
-  return acc;
-}, {});
+// const result = str.split("").reduce((acc, item) => {
+//   acc.hasOwnProperty(item) ? (acc[item] += 1) : (acc[item] = 1);
+//   return acc;
+// }, {});
 
-const sorted = Object.entries(result).sort((a, b) => b[1] - a[1]);
+// const sorted = Object.entries(result).sort((a, b) => b[1] - a[1]);
 
-console.log(sorted);
+// console.log(sorted);
+const arr = ["Honda", "Audi", "BMW", "Toyota", "Mersedes", "Ford", "Skoda"];
+
+const result = arr.reduce((acc, item, idx) => {
+  return acc + `${idx + 1} - ${item}`;
+}, "");
+
+console.log(result);
