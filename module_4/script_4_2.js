@@ -320,10 +320,31 @@ const cars = [
 // // Change code above this line
 
 // Change code below this line
-const getSortedFriends = (users) => {
-  return users
-    .flatMap((user) => user.friends)
-    .filter((item, idx, arr) => arr.indexOf(item) === idx)
-    .sort((a, b) => a.localeCompare(b));
-};
+// const getSortedFriends = (users) => {
+//   return users
+//     .flatMap((user) => user.friends)
+//     .filter((item, idx, arr) => arr.indexOf(item) === idx)
+//     .sort((a, b) => a.localeCompare(b));
+// };
+// // Change code above this line
+
+// Change code below this line
+// {
+//   name: "Moore Hensley",
+//   email: "moorehensley@indexia.com",
+//   eyeColor: "blue",
+//   friends: ["Sharron Pace"],
+//   isActive: false,
+//   balance: 2811,
+//   gender: "male"
+// },
+
+// const getTotalBalanceByGender = (users, gender) => {
+//   return users
+//     .filter((item) => item.gender === gender)
+//     .reduce((acc, item) => {
+//       acc += item.balance;
+//       return acc;
+//     }, 0);
+// };
 // Change code above this line
