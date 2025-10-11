@@ -46,8 +46,18 @@ const chopShop = {
     { name: "Ruby", price: 800, quantity: 5 },
   ],
   calcTotalPrice(stoneName) {
-    const stone = this.stones.find(({ name }) => name === stoneName);
-    return stone.price * stone.quantity;
+    const { price, quantity } = this.stones.find(
+      ({ name }) => name === stoneName
+    );
+    return price * quantity;
   },
 };
 console.log(chopShop.calcTotalPrice("Emerald"));
+
+const shop2 = {
+  stones: [
+    { name: "Stone", price: 900, quantity: 4 },
+    { name: "Sand", price: 700, quantity: 7 },
+  ],
+};
+console.log(chopShop.calcTotalPrice.call(shop2, "Stone"));
