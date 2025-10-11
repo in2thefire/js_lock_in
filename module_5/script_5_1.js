@@ -64,14 +64,14 @@
 
 const calculator = {
   read(a, b) {
-    this.a = a ?? 0;
-    this.b = b ?? 0;
+    this.a = a;
+    this.b = b;
   },
   add(a, b) {
     return (this.a ?? 0) + (this.b ?? 0);
   },
   mult(a, b) {
-    return (this.a ?? 0) * (this.b ?? 0);
+    return (this.a ?? 1) * (this.b ?? 1);
   },
 };
 calculator.read(3, 4);
