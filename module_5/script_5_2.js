@@ -35,6 +35,12 @@
 // practiceOwner.sayHello();
 
 class User {
+  static counter = 0;
+  static addUser() {
+    this.counter += 1;
+    console.log(`Number of users : ${this.counter}`);
+    // User.counter += 1;
+  }
   #location;
   constructor({ name, email, age = 18, location = "World", password }) {
     this.name = name;
@@ -42,9 +48,13 @@ class User {
     this.age = age;
     this.#location = location;
     this.password = password;
+    User.addUser();
   }
   sayHello() {
     console.log(this.name);
+  }
+  #getEmail() {
+    console.log(this.email);
   }
   get locale() {
     return this.#location;
@@ -58,21 +68,57 @@ class User {
     }
   }
 }
-
-const test = new User({
+class Human extends User {
+  constructor({ name, age, location, email, password, gun }) {
+    super({ name, age, location, email, password });
+    this.gun = gun;
+  }
+  shoot() {
+    console.log(`Human shoot you with ${this.gun}`);
+  }
+}
+class Avatar extends User {
+  constructor({ name, age, location, email, password, damage }) {
+    super({ name, age, location, email, password });
+    this.damage = damage;
+  }
+  attack() {
+    console.log(`Attack with damage ${this.damage}`);
+  }
+}
+class Dragon extends Avatar {
+  constructor({ name, age, location, email, password, damage }) {
+    super({ name, age, location, email, password, damage });
+  }
+}
+const avatar = new Avatar({
   name: "UserA",
   email: "usera@gmail.com",
   location: "Oslo",
   password: "qwerty111",
+  damage: 700,
 });
-const test2 = new User({
+const human = new Human({
   name: "UserB",
   email: "userbgmail.com",
   age: 24,
+  gun: "M4A4",
 });
+const dragon = new Dragon({
+  name: "Userc",
+  email: "userc@gmail.com",
+  location: "Oslo",
+  password: "qwerty111",
+  damage: 1000,
+});
+// console.log(test.locale);
+// test.locale = "Bergen";
+console.log(avatar);
+console.log(human);
+avatar.attack();
+human.shoot();
 
-console.log(test.locale);
-test.locale = "Bergen";
-console.log(test);
-console.log(test2);
-test.sayHello();
+console.log(dragon);
+// console.log(test2);
+// test.sayHello();
+// console.log(test.constructor.counter);
