@@ -35,12 +35,44 @@
 // practiceOwner.sayHello();
 
 class User {
-  constructor(name, email, age = 18) {
+  #location;
+  constructor({ name, email, age = 18, location = "World", password }) {
     this.name = name;
     this.email = email;
     this.age = age;
+    this.#location = location;
+    this.password = password;
+  }
+  sayHello() {
+    console.log(this.name);
+  }
+  get locale() {
+    return this.#location;
+  }
+  set locale(city) {
+    const value = prompt("Enter Password");
+    if (value === this.password) {
+      this.#location = city;
+    } else {
+      console.log("No no no");
+    }
   }
 }
 
-const test = new User("user A", "test@gmail.com");
+const test = new User({
+  name: "UserA",
+  email: "usera@gmail.com",
+  location: "Oslo",
+  password: "qwerty111",
+});
+const test2 = new User({
+  name: "UserB",
+  email: "userbgmail.com",
+  age: 24,
+});
+
+console.log(test.locale);
+test.locale = "Bergen";
 console.log(test);
+console.log(test2);
+test.sayHello();
