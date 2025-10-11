@@ -62,20 +62,20 @@
 // };
 // console.log(chopShop.calcTotalPrice.call(shop2, "Stone"));
 
-const calculator = {
-  read(a, b) {
-    this.a = a;
-    this.b = b;
-  },
-  add(a, b) {
-    return (this.a ?? 0) + (this.b ?? 0);
-  },
-  mult(a, b) {
-    return (this.a ?? 1) * (this.b ?? 1);
-  },
-};
-calculator.read(3, 4);
-console.log(calculator);
+// const calculator = {
+//   read(a, b) {
+//     this.a = a;
+//     this.b = b;
+//   },
+//   add(a, b) {
+//     return (this.a ?? 0) + (this.b ?? 0);
+//   },
+//   mult(a, b) {
+//     return (this.a ?? 1) * (this.b ?? 1);
+//   },
+// };
+// calculator.read(3, 4);
+// console.log(calculator);
 
-console.log(calculator.add());
-console.log(calculator.mult());
+// console.log(calculator.add());
+// console.log(calculator.mult());
