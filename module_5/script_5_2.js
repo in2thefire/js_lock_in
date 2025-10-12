@@ -122,3 +122,29 @@
 // console.log(test2);
 // test.sayHello();
 // console.log(test.constructor.counter);
+
+class Bloger {
+  constructor({ email, age, numbersOfPosts, topics }) {
+    this.email = email;
+    this.age = age;
+    this.numbersOfPosts = numbersOfPosts;
+    this.topics = topics;
+  }
+  getInfo() {
+    return `User ${this.email} is ${this.age} years old and has ${this.numbersOfPosts} posts.`;
+  }
+  updatePostCount(value) {
+    this.numbersOfPosts += value;
+  }
+}
+
+const mango = new Bloger({
+  email: "mango@gmail.com",
+  age: 24,
+  numbersOfPosts: 12,
+  topics: ["tech", "cooking"],
+});
+
+console.log(mango.getInfo());
+mango.updatePostCount(5);
+console.log(mango);
