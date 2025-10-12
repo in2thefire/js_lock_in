@@ -123,28 +123,59 @@
 // test.sayHello();
 // console.log(test.constructor.counter);
 
-class Bloger {
-  constructor({ email, age, numbersOfPosts, topics }) {
-    this.email = email;
-    this.age = age;
-    this.numbersOfPosts = numbersOfPosts;
-    this.topics = topics;
-  }
-  getInfo() {
-    return `User ${this.email} is ${this.age} years old and has ${this.numbersOfPosts} posts.`;
-  }
-  updatePostCount(value) {
-    this.numbersOfPosts += value;
-  }
-}
+// class Bloger {
+//   constructor({ email, age, numbersOfPosts, topics }) {
+//     this.email = email;
+//     this.age = age;
+//     this.numbersOfPosts = numbersOfPosts;
+//     this.topics = topics;
+//   }
+//   getInfo() {
+//     return `User ${this.email} is ${this.age} years old and has ${this.numbersOfPosts} posts.`;
+//   }
+//   updatePostCount(value) {
+//     this.numbersOfPosts += value;
+//   }
+// }
 
-const mango = new Bloger({
-  email: "mango@gmail.com",
-  age: 24,
-  numbersOfPosts: 12,
-  topics: ["tech", "cooking"],
-});
+// const mango = new Bloger({
+//   email: "mango@gmail.com",
+//   age: 24,
+//   numbersOfPosts: 12,
+//   topics: ["tech", "cooking"],
+// });
 
-console.log(mango.getInfo());
-mango.updatePostCount(5);
-console.log(mango);
+// console.log(mango.getInfo());
+// mango.updatePostCount(5);
+// console.log(mango);
+
+// class Storage {
+//   constructor(items) {
+//     this.items = items;
+//   }
+//   getItems() {
+//     return this.items;
+//   }
+//   addItem(item) {
+//     if (!this.items.includes(item)) {
+//       this.items.push(item);
+//     } else {
+//       console.log(`У вас уже є ${item}`);
+//     }
+//   }
+//   removeItem(item) {
+//     this.items = this.items.filter((i) => i !== item);
+//     // const index = this.items.indexOf(item);
+//     // if (index !== -1) {
+//     //   this.items.splice(index, 1);
+//     // }
+//   }
+// }
+// const storage = new Storage(["🍎", "🍐", "🍊", "🍇"]);
+
+// console.log(storage.getItems());
+// storage.addItem("🍑");
+// storage.removeItem("🍎");
+// console.log(storage.getItems());
+
+// storage.addItem("🍐");
