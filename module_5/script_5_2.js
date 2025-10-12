@@ -179,3 +179,28 @@
 // console.log(storage.getItems());
 
 // storage.addItem("🍐");
+
+// class User {
+//   #login;
+//   #email;
+//   constructor({ login, email }) {
+//     this.#login = login;
+//     this.#email = email;
+//   }
+//   get login() {
+//     return this.#login;
+//   }
+//   set login(newLogin) {
+//     if (this.login !== newLogin) {
+//       this.#login = newLogin;
+//     }
+//   }
+//   get email() {
+//     return this.#email;
+//   }
+//   set email(newEmail) {
+//     if (this.email !== newEmail) {
+//       this.#email = newEmail;
+//     }
+//   }
+// }
