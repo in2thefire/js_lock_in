@@ -13,10 +13,39 @@
 // // li.textContent = list.children.length + 1;
 // // list.append(li);
 // // console.log(li);
-// const list = document.querySelector(".js-list");
 // console.dir(list.children);
 
 // const li = `<li class = "title-color" data-id ="1234">${
 //   list.children.length + 1
 // }<div><h2>Hello</h2></div></li>`;
 // list.insertAdjacentHTML("beforeend", li);
+// const listStatic = document.querySelectorAll("li");
+// const listDinamic = document.getElementsByTagName("li");
+// const list = document.querySelector(".js-list");
+
+// const li = document.createElement("li");
+// li.textContent = list.children.length + 1;
+// list.append(li);
+
+// console.log(listStatic);
+// console.log(listDinamic);
+
+const cars = [
+  {
+    id: 1,
+    model: "Honda",
+    type: "Civic",
+    price: 12000,
+    img: "https://tinyurl.com/ywmaf3ww",
+  },
+  {
+    id: 2,
+    model: "Audi",
+    type: "Q7",
+    price: 40000,
+    img: "https://tinyurl.com/mr2khnxm",
+  },
+];
+
+const container = document.querySelector(".js-container");
+console.dir(container);
