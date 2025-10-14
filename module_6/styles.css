@@ -1,3 +1,6 @@
 .title-color {
   color: rebeccapurple;
 }
+ul {
+  list-style: none;
+}
