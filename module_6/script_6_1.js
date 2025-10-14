@@ -32,14 +32,13 @@
 
 const cars = [
   {
-    id: 1,
     model: "Honda",
     type: "Civic",
     price: 12000,
     img: "https://tinyurl.com/ywmaf3ww",
   },
   {
-    id: 2,
+    id: 2, // Додав id
     model: "Audi",
     type: "Q7",
     price: 40000,
@@ -51,7 +50,7 @@ const container = document.querySelector(".js-container");
 const markup = cars
   .map(
     ({ id = "none", model, type, price, img }) =>
-      `<li data-${id}>
+      `<li data-id="${id}">
         <img src="${img}" alt="${model} ${type}" class="img" />
         <h2>Марка - ${model}</h2>
         <h3>Модель - ${type}</h3>
@@ -62,5 +61,10 @@ console.log(markup);
 container.insertAdjacentHTML("beforeend", markup);
 
 const containerAfter = document.querySelector(".js-container");
-//  [...containerAfter.children].forEach((item) => item.remove());
-containerAfter.innerHTML = "";
+[...containerAfter.children].forEach((item) => {
+  if (item.dataset.id !== "none") {
+    //  - видаляємо тільки елементи з id
+    item.remove();
+  }
+});
+// containerAfter.innerHTML = ""; -- видалити всі елементи в списку
