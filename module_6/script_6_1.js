@@ -48,4 +48,19 @@ const cars = [
 ];
 
 const container = document.querySelector(".js-container");
-console.dir(container);
+const markup = cars
+  .map(
+    ({ id = "none", model, type, price, img }) =>
+      `<li data-${id}>
+        <img src="${img}" alt="${model} ${type}" class="img" />
+        <h2>Марка - ${model}</h2>
+        <h3>Модель - ${type}</h3>
+        <p>Ціна - ${price}</p></li>`
+  )
+  .join("");
+console.log(markup);
+container.insertAdjacentHTML("beforeend", markup);
+
+const containerAfter = document.querySelector(".js-container");
+//  [...containerAfter.children].forEach((item) => item.remove());
+containerAfter.innerHTML = "";
