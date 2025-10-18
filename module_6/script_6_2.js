@@ -1,9 +1,42 @@
-const buttonEl = document.querySelector(".js-button");
-const containerEl = document.querySelector(".js-container");
-let step = 0;
-containerEl.addEventListener("click", onClick);
+// buttonEl.addEventListener("click", onTargetButtonClick); //,targetButtonClickHandler); ,handleTargetButtonClick);
+
+// function handleTargetButtonClick(event) {
+//   console.log("Clock");
+// }
+
+// function targetButtonClickHandler(event) {
+//   console.log("Clock");
+// }
+
+// function onTargetButtonClick(event) {
+//   console.log("Clock");
+// }
+
+const title = document.querySelector(".js-title");
+const title1 = document.querySelector(".js-title1");
+const title2 = document.querySelector(".js-title2");
+title.addEventListener("click", onClick);
+title1.addEventListener("click", onClick);
+title2.addEventListener("click", onClick);
+
+const maxLength = 13;
+const totalLength = maxLength + 3;
+
 function onClick(evt) {
-  step += 10;
-  containerEl.style.marginLeft = `${step}px`;
-  console.log(evt);
+  const title = evt.currentTarget;
+  const str = title.textContent.slice(0, maxLength);
+
+  if (title.textContent.length > totalLength) {
+    const remainder = title.textContent.slice(maxLength);
+    title.setAttribute("data-title", remainder);
+    title.textContent = str + "...";
+  } else {
+    const remainder = title.dataset["title"];
+    console.log(title.dataset["title"]);
+    console.log(title.dataset.title);
+    if (remainder) {
+      title.textContent = str + remainder;
+    }
+    // getAttribute
+  }
 }
