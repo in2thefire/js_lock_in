@@ -46,4 +46,11 @@ formEl.addEventListener("submit", onSubmit);
 
 function onSubmit(evt) {
   evt.preventDefault();
+  const { userName, userEmail, userAge } = evt.currentTarget.elements;
+  const data = {
+    name: userName.value,
+    email: userEmail.value,
+    age: userAge.value,
+  };
+  console.log(data);
 }
