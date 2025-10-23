@@ -57,5 +57,7 @@
 
 document.addEventListener("keydown", onKeyDown);
 function onKeyDown(evt) {
-  console.log(evt);
+  if (evt.code === "Space") {
+    console.log("Space");
+  }
 }
