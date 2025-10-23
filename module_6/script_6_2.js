@@ -41,16 +41,21 @@
 //   }
 // }
 
-const formEl = document.querySelector(".js-form");
-formEl.addEventListener("submit", onSubmit);
+// const formEl = document.querySelector(".js-form");
+// formEl.addEventListener("submit", onSubmit);
 
-function onSubmit(evt) {
-  evt.preventDefault();
-  const { userName, userEmail, userAge } = evt.currentTarget.elements;
-  const data = {
-    name: userName.value,
-    email: userEmail.value,
-    age: userAge.value,
-  };
-  console.log(data);
+// function onSubmit(evt) {
+//   evt.preventDefault();
+//   const { userName, userEmail, userAge } = evt.currentTarget.elements;
+//   const data = {
+//     name: userName.value,
+//     email: userEmail.value,
+//     age: userAge.value,
+//   };
+//   console.log(data);
+// }
+
+document.addEventListener("keydown", onKeyDown);
+function onKeyDown(evt) {
+  console.log(evt);
 }
