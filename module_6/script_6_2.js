@@ -57,7 +57,10 @@
 
 document.addEventListener("keydown", onKeyDown);
 function onKeyDown(evt) {
-  if (evt.code === "Space") {
-    console.log("Space");
+  // if (evt.code === "Space") {
+  //   console.log("Space");
+  // }
+  if (evt.ctrlKey && evt.code === "KeyC") {
+    alert("kopy?");
   }
 }
